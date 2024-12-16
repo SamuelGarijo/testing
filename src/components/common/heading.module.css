@@ -1,0 +1,79 @@
+.h1 {
+  font-size: clamp(2.75em, 4.16vw, 3.75rem);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 3.75rem */
+  letter-spacing: -0.06em;
+}
+
+.h2 {
+  font-size: clamp(2em, 2.77vw, 2.5em);
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.04em;
+}
+
+.h3 {
+  font-size: clamp(1.5em, 2vw, 1.875em);
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.04em;
+}
+
+.h4 {
+  font-size: 1.25em;
+  line-height: 120%;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+.h5 {
+  font-size: 1em;
+  line-height: 125%;
+}
+
+.h6 {
+  font-size: 0.875em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.h7 {
+  font-size: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.center {
+  text-align: center;
+}
+
+.color-base {
+  color: var(--color-base);
+}
+
+.color-primary {
+  color: var(--color-primary);
+}
+
+.color-secondary {
+  color: var(--color-secondary);
+}
+
+.color-tertiary {
+  color: var(--color-tertiary);
+}
+
+.color-quarternary {
+  color: var(--color-quarternary);
+}
+
+.color-accent {
+  color: var(--color-accent);
+}
+
+.link {
+  text-decoration: none;
+}

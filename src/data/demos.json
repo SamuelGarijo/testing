@@ -1,0 +1,58 @@
+[
+  {
+    "icon": "widgets",
+    "iconLabel": "Widgets",
+    "src": "/demos/widgets/index.html",
+    "theme": "purple",
+    "width": 400,
+    "height": 226,
+    "res": "1.2x",
+    "title": "Widgets Demo",
+    "description": "<p>Here you can see how LVGL widgets look like out of the box with their default appearance. But don't forget, you can customize everything.</p><p>This is the most well known LVGL demo. If you have ported LVGL to a board just call <code>lv_demo_widgets();</code> to start this demo on your device. Don’t worry, it’s fully responsive so it will work well on your display too.</p>"
+  },
+  {
+    "icon": "smartwatch",
+    "iconLabel": "Smartwatch",
+    "src": "/demos/nxp-smartwatch/index.html",
+    "theme": "green",
+    "mask": "circle",
+    "width": 292,
+    "height": 292,
+    "res": "1.33x",
+    "title": "Smartwatch GUI for NXP",
+    "description": "<p>We have designed this Smartwatch UI for NXP for the <a href=\"https://www.nxp.com/design/development-boards/i-mx-evaluation-and-development-boards/i-mx-rt595-evaluation-kit:MIMXRT595-EVK\">i.MX RT595 Evaluation Kit</a>. It contains 25 screen to showcase to most common smartwatch apps, such as clock, music player, fitness, weather, payment and so on.</p><p>You can navigate among the main activities by swipe up and down gestures, and see the sub-activities with left and right gesture.</p>"
+  },
+  {
+    "icon": "thermometer",
+    "iconLabel": "Thermostat",
+    "src": "/demos/thermostat/index.html",
+    "theme": "blue",
+    "width": 320,
+    "height": 240,
+    "res": "1x",
+    "title": "Thermostat UI without Images",
+    "description": "<p>This is a user interface for a small (320x240) Thermostat. We haven't used any images in this demo. All you see here are rendered by LVGL according to the set style properties. You can find here rounded rectangles, circles, gradients, shadows, borders and outlines too.</p>"
+  },
+  {
+    "icon": "play",
+    "iconLabel": "Music Player",
+    "src": "/demos/music/index.html",
+    "theme": "magenta",
+    "width": 400,
+    "height": 226,
+    "res": "1.2x",
+    "title": "Music Player App",
+    "description": "<p>A modern, smartphone-like music player demo. It shows fancy spectrum analyzer around the album cover which is animated on the rhythm of the music.</p><p>We use this demo during board certification to measure the performance of the  boards. Therefore this demo is really responsive. It work well on square, round, portrait, landscape and high DPI screens too</p>"
+  },
+  {
+    "icon": "printer",
+    "iconLabel": "Printer UI",
+    "src": "/demos/printer/index.html",
+    "theme": "orange",
+    "width": 400,
+    "height": 240,
+    "res": "2x",
+    "title": "Printer UI Demo",
+    "description": "<p>Graphical user interface for a printer in 800x480 resolution. In the ”Copy“ and ”Send“ menus you can see an image with real time color adjustment and zoom.</p>"
+  }
+]

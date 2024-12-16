@@ -1,0 +1,28 @@
+[
+  {
+    "label": "OS Support",
+    "items": [
+      ["Bare Metal", "/images/logos/baremetal.svg", "https://en.wikipedia.org/wiki/Bare_machine"],
+      ["Free RTOS", "/images/logos/freertos.svg", "https://www.freertos.org/"],
+      ["RT-Thread", "/images/logos/rt-thread.svg", "https://www.rt-thread.org/"],
+      ["Zephyr", "/images/logos/zephyr.svg", "https://www.zephyrproject.org/"],
+      ["NX", "/images/logos/nuttx.svg", "https://www.nuttx.org/"],
+      ["PX5", "/images/logos/px5rtos.svg", "https://px5rtos.com/"],
+      ["Linux", "/images/logos/linux.svg", "https://www.linux.org/"],
+      ["Windows", "/images/logos/windows.svg", "https://www.microsoft.com/en-us/windows/"],
+      ["MacOS", "/images/logos/macos.svg", "https://www.apple.com/macos/"]
+    ]
+  },
+  {
+    "label": "Framework support",
+    "items": [
+      ["Arduino", "/images/logos/arduino.svg", "https://www.arduino.cc/"],
+      ["Tasmota", "/images/logos/tasmota.svg", "https://tasmota.app"],
+      ["PlatformIO", "/images/logos/platformio.svg", "https://platformio.org/"]
+    ]
+  },
+  {
+    "label": "Bindings",
+    "items": [["MicroPython", "/images/logos/micropython.svg", "https://micropython.org/"]]
+  }
+]

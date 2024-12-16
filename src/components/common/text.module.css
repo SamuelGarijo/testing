@@ -1,0 +1,92 @@
+.text {
+  font-style: normal;
+  line-height: 166%;
+  letter-spacing: -0.02em;
+}
+
+.text strong {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.text a {
+  font-weight: 600;
+  color: var(--color-link);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: fit-content;
+  height: auto;
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+
+.text a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  width: 100%;
+  height: 1px;
+  background-color: transparent;
+  transform-origin: center;
+  transform: scaleX(0);
+  transition: transform 0.3s var(--ease-out-expo), background-color 0.3s var(--ease-out-expo);
+}
+
+.text a:hover::after {
+  transform: scaleX(1);
+  background-color: var(--color-link);
+}
+
+.2xl {
+  font-size: 1.5rem;
+}
+
+.xl {
+  font-size: 1.25rem;
+}
+
+.lg {
+  font-size: 1.125rem;
+}
+
+.md {
+  font-size: 1rem;
+}
+
+.sm {
+  font-size: 0.875rem;
+}
+
+.xs {
+  font-size: 0.8125rem;
+  line-height: 1rem;
+}
+
+.2xs {
+  font-size: 0.75rem;
+  line-height: 1.6;
+}
+
+.inherit {
+  color: inherit;
+}
+
+.primary {
+  color: var(--color-primary);
+}
+
+.secondary {
+  color: var(--color-secondary);
+}
+
+.tertiary {
+  color: var(--color-tertiary);
+}
+
+.quarternary {
+  color: var(--color-quarternary);
+}

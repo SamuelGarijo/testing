@@ -1,0 +1,125 @@
+/**
+ * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML
+ * Based on https://github.com/chriskempson/tomorrow-theme
+ * @author Rose Pritchard
+ */
+
+.prismjs {
+  code[class*="language-"] {
+    color: var(--bg-color-primary);
+    background: none !important;
+    font-family: var(--font-monospace);
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    width: 100%;
+    display: block;
+
+    -moz-tab-size: 2;
+    -o-tab-size: 2;
+    tab-size: 2;
+  }
+
+  .comment,
+  .token.comment,
+  .token.block-comment,
+  .token.prolog,
+  .token.doctype,
+  .token.cdata {
+    color: #999;
+  }
+
+  .token.punctuation {
+    color: #ccc;
+  }
+
+  .token.tag,
+  .token.attr-name,
+  .token.namespace,
+  .token.deleted {
+    color: #e2777a;
+  }
+
+  .token.function-name {
+    color: #6196cc;
+  }
+
+  .token.boolean,
+  .token.number,
+  .token.function {
+    color: #f08d49;
+  }
+
+  .token.property,
+  .token.class-name,
+  .token.constant,
+  .token.symbol {
+    color: #f8c555;
+  }
+
+  .token.selector,
+  .token.important,
+  .token.atrule,
+  .token.keyword,
+  .token.builtin {
+    color: #cc99cd;
+  }
+
+  .token.string,
+  .token.char,
+  .token.attr-value,
+  .token.regex,
+  .token.variable {
+    color: #7ec699;
+  }
+
+  .token.operator,
+  .token.entity,
+  .token.url {
+    color: #67cdcc;
+  }
+
+  .token.important,
+  .token.bold {
+    font-weight: bold;
+  }
+  .token.italic {
+    font-style: italic;
+  }
+
+  .token.entity {
+    cursor: help;
+  }
+
+  .token.inserted {
+    color: green;
+  }
+
+  .line {
+    display: inline-block;
+    padding-left: 4em;
+    position: relative;
+    white-space: pre-wrap;
+    min-height: 1em;
+    counter-increment: linenumber;
+  }
+
+  .line::before {
+    content: counter(linenumber);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3em;
+    color: rgba(var(--bg-color-base-rgb), 0.3);
+    display: block;
+    padding-right: 0.8em;
+    text-align: right;
+  }
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: 0.1em;
+  border-radius: 0.3em;
+  white-space: normal;
+  background: var(--color-primary);
+}

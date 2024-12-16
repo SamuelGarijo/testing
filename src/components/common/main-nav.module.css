@@ -1,0 +1,228 @@
+/* MyComponent.module.css */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-index-sticky);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  background-color: rgba(var(--bg-color-base-rgb), 0.8);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 1px 0 rgba(var(--border-color-base-rgb), 0.1);
+  color: var(--color-base);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.hamburger {
+  display: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.375rem;
+  position: relative;
+  z-index: 10;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-1);
+  height: 2rem;
+}
+
+.logoText {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.nav {
+  display: flex;
+  gap: var(--gap-8);
+}
+
+.navLinkWrapper {
+  position: relative;
+}
+
+.navLink {
+  font-weight: 500;
+  transition: color 0.4s var(--ease-out-expo);
+  line-height: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.navLink:hover {
+  color: var(--color-tertiary);
+}
+
+.navLink.active {
+  color: rgb(var(--color-purple-600-rgb));
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-3);
+  text-align: center;
+}
+
+.subnav {
+  top: 100%;
+  left: -1.5rem;
+  position: absolute;
+  z-index: (var(--z-index-sticky) + 1);
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-color-base);
+  padding: 0.5rem;
+  box-shadow: 0 0 0 1px rgba(var(--color-black-rgb), 0.1), var(--shadow-lg);
+  border-radius: var(--radius-sm);
+  transform: translateY(1rem);
+  transition: opacity 0.1s var(--ease-out-expo), transform 0.1s var(--ease-out-expo);
+  min-width: 10rem;
+}
+
+[data-theme="dark"] .subnav {
+  background-color: var(--bg-color-primary);
+}
+
+.navLinkWrapper:hover .subnav {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  transition: opacity 0.15s var(--ease-out-expo), transform 0.45s var(--ease-out-expo);
+}
+
+.subnav > .navLink {
+  line-height: 1.5rem;
+  padding: 0.25rem 1rem;
+  white-space: nowrap;
+  border-radius: var(--radius-xs);
+}
+
+.subnav .navLink:hover {
+  background-color: var(--bg-color-primary);
+}
+
+.subnav .navGroupHeader {
+  color: var(--color-quarternary);
+  white-space: nowrap;
+  border-top: 1px solid rgba(var(--color-black-rgb), 0.1);
+  padding: 1rem 1.5rem 0.5rem;
+  margin-top: 0.5rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+@media (max-width: 1139px) {
+  .header {
+    flex-wrap: wrap;
+    gap: var(--gap-3);
+    justify-content: center;
+    padding: 1rem 1rem;
+  }
+
+  .hamburger {
+    position: absolute;
+    left: 1rem;
+    display: flex;
+    cursor: pointer;
+  }
+
+  .cta {
+    right: 1rem;
+    position: absolute;
+  }
+
+  .hamburger::before,
+  .hamburger::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-base);
+    transition: all 0.4s var(--ease-out-expo);
+  }
+
+  .hamburger.selected::before {
+    transform: translateY(4px) rotate(45deg);
+  }
+
+  .hamburger.selected::after {
+    transform: translateY(-4px) rotate(-45deg);
+  }
+
+  .nav {
+    position: absolute;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--bg-color-base);
+    backdrop-filter: blur(20px);
+    border-right: 1px solid rgba(var(--color-black-rgb), 0.1);
+    top: 0;
+    left: 0;
+    gap: 0;
+    text-align: left;
+    width: 15rem;
+    padding: 5rem 1.25rem;
+    transform: translateX(-100%);
+    transition: transform 0.25s var(--ease-out-expo);
+    will-change: transform;
+  }
+
+  .subnav {
+    position: static;
+    opacity: 1;
+    transform: none;
+    box-shadow: none;
+    padding: 0;
+    gap: var(--gap-2);
+  }
+
+  .navLinkWrapper .subnav > .navLink {
+    padding: 0.125rem 0 0.125rem 1rem;
+    font-size: 0.875rem;
+  }
+
+  .navLinkWrapper .subnav > .navLink:hover {
+    background-color: transparent;
+  }
+
+  .nav .navLink {
+    font-size: 1rem;
+  }
+
+  .nav.noTransition {
+    transition: none;
+  }
+
+  .subnav .navGroupHeader {
+    font-size: 0.875rem;
+    text-transform: none;
+    letter-spacing: 0;
+    border-top: none;
+    padding: 0.5rem 1rem 0.5rem;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: 500;
+  }
+
+  .subnav .navGroupHeader ~ .navLink {
+    padding-left: 2rem;
+  }
+
+  .nav.show {
+    transform: translateX(0);
+    transition: transform 0.6s var(--ease-out-expo);
+  }
+}

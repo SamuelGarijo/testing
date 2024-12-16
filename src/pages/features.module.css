@@ -1,0 +1,127 @@
+.requirements {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: var(--block-gap-y) var(--block-pads-x);
+  background-color: var(--bg-color-secondary);
+  border-radius: var(--radius-3xl);
+  max-width: 100rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.requirementsInner {
+  max-width: var(--max-width);
+  width: 100%;
+}
+
+.requirementsInner header * {
+  color: var(--color-primary);
+}
+
+.requirementsInner header p {
+  color: var(--color-secondary);
+}
+
+.requirementsGrid {
+  margin-top: var(--gap-6);
+  column-count: 4;
+  column-gap: var(--gap-6);
+  column-fill: balance;
+}
+
+.requirementsGrid p {
+  break-inside: avoid-column;
+}
+
+.requirementsGrid p + p {
+  margin-top: var(--gap-2);
+}
+
+@media (max-width: 991px) {
+  .requirements {
+    border-radius: var(--radius-xl);
+  }
+  .requirementsGrid {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 767px) {
+  .requirementsGrid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 559px) {
+  .requirementsGrid {
+    column-count: 1;
+  }
+}
+
+.stickyNav {
+  --color-accent: rgb(var(--color-purple-base-rgb));
+}
+
+.demoBlock {
+  scroll-margin-top: calc(var(--main-nav-height) + var(--sticky-nav-height) + var(--block-gap-y));
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--block-gap-x);
+  align-items: center;
+}
+
+.demoBlock:nth-child(even) {
+  direction: rtl;
+}
+
+.demoBlockInner {
+  width: 100%;
+  padding: var(--block-pads-y) 0;
+  direction: ltr;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-6);
+}
+
+.demoBlockDemo {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color-quarternary);
+  overflow: hidden;
+  border-radius: var(--radius-3xl);
+  padding: var(--gap-8);
+  aspect-ratio: 1 / 1;
+}
+
+.demoBlockDemoWrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+@media (max-width: 991px) {
+  .demoBlock {
+    grid-template-columns: 1fr;
+  }
+  .demoBlock:nth-child(even) {
+    direction: ltr;
+  }
+  .demoBlockInner {
+    padding: 0;
+    max-width: 40rem;
+    justify-self: center;
+  }
+
+  .demoBlockDemo {
+    padding-top: var(--block-pads-y);
+    padding-bottom: var(--block-pads-y);
+    aspect-ratio: 0;
+    border-radius: var(--radius-xl);
+  }
+}

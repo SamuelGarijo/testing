@@ -1,0 +1,104 @@
+.hero {
+}
+
+.heroWrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--block-gap-x);
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.formWrapper {
+  background-color: var(--bg-color-base);
+  border-radius: var(--radius-3xl);
+  padding: var(--block-pads-x);
+  overflow: hidden;
+}
+
+.intro {
+  padding: var(--block-pads-x);
+  background-color: var(--bg-color-primary);
+  border-radius: var(--radius-lg);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-6);
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  gap: var(--gap-2);
+  align-items: center;
+}
+
+.formBox {
+  scroll-margin-top: calc(var(--main-nav-height) + var(--block-gap-y));
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-6);
+  padding: var(--block-pads-x);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color-tertiary);
+}
+
+.formBox:has(+ .insertButton) {
+  margin-bottom: -2.5rem;
+}
+
+.aside {
+  position: sticky;
+  display: flex;
+  top: calc(var(--main-nav-height) + var(--block-gap-y));
+  flex-direction: column;
+  gap: var(--gap-6);
+  align-self: flex-start;
+}
+
+.checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-2);
+}
+
+.faq {
+  padding-bottom: var(--view-gap-y);
+}
+
+.insertButton {
+  background-color: var(--bg-color-base);
+  margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+  .heroWrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .formWrapper {
+    border-radius: var(--radius-xl);
+    padding-bottom: var(--block-gap-y);
+  }
+
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+
+  .aside {
+    position: static;
+    max-width: 40rem;
+  }
+
+  .intro,
+  .formBox {
+    border-radius: var(--radius-md);
+  }
+
+  .formBox {
+    padding-bottom: var(--block-gap-y);
+  }
+}

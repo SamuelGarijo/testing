@@ -1,0 +1,135 @@
+.wrapper {
+  display: flex;
+  width: calc(100% + var(--view-pads-x) * 2);
+  margin-left: calc(var(--view-pads-x) * -1);
+  margin-right: calc(var(--view-pads-x) * -1);
+}
+
+.wrapper > * {
+  width: 100%;
+  align-self: stretch;
+}
+
+.featureContentWrapper {
+  display: flex;
+
+  align-items: center;
+  color: var(--color-secondary);
+}
+
+.featureContentWrapper.primary {
+  background-color: var(--bg-color-primary);
+}
+
+.featureContentWrapper.secondary {
+  background-color: var(--bg-color-secondary);
+}
+
+.featureContentWrapper.tertiary {
+  background-color: var(--bg-color-tertiary);
+}
+
+.featureContentWrapper.quarternary {
+  background-color: var(--bg-color-quarternary);
+}
+
+.featureContentWrapper:first-child {
+  justify-content: flex-end;
+  padding: var(--block-pads-y) 0 var(--block-pads-y) var(--block-pads-x);
+}
+
+.featureContentWrapper:last-child {
+  justify-content: flex-start;
+  padding: var(--block-pads-y) var(--block-gap-x) var(--block-pads-y) 0;
+}
+
+.featureContent {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  gap: var(--gap-6);
+  width: 100%;
+  max-width: calc(var(--max-width) / 2);
+}
+
+.featureContentWrapper:first-child .featureContent {
+  padding-right: var(--block-gap-x);
+}
+
+.featureContentWrapper:last-child .featureContent {
+  padding-left: var(--block-gap-x);
+}
+
+@media (max-width: 992px) {
+  .featureContentWrapper:first-child,
+  .featureContentWrapper:last-child {
+    padding: var(--block-pads-y) var(--block-pads-x);
+  }
+
+  .featureContentWrapper:first-child .featureContent,
+  .featureContentWrapper:last-child .featureContent {
+    padding: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .featureContentWrapper:first-child,
+  .featureContentWrapper:last-child {
+    padding: var(--block-pads-y) var(--block-pads-x);
+  }
+
+  .featureContent {
+    padding-right: 0;
+    max-width: none;
+    align-items: stretch;
+  }
+
+  .featureContentWrapper:first-child .featureContent,
+  .featureContentWrapper:last-child .featureContent {
+    padding: 0;
+  }
+}
+
+.featureVisual {
+  position: relative;
+}
+
+.featureVisualWrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.featureVisual.primary {
+  background-color: var(--bg-color-primary);
+}
+
+.featureVisual.secondary {
+  background-color: var(--bg-color-secondary);
+}
+
+.featureVisual.tertiary {
+  background-color: var(--bg-color-tertiary);
+}
+
+.featureVisual.quarternary {
+  background-color: var(--bg-color-quarternary);
+}
+
+.featureVisualWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .featureVisualWrapper {
+    position: relative;
+  }
+}

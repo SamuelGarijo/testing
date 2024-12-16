@@ -1,0 +1,80 @@
+.section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--block-gap-x) var(--block-gap-y);
+  max-width: var(--max-width);
+}
+
+.header {
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--block-gap-x) var(--block-gap-y);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: var(--view-pads-y);
+}
+
+.wrapper-md {
+  max-width: var(--max-width-md);
+}
+
+.wrapper-lg {
+  max-width: var(--max-width);
+}
+
+.two-cols {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--block-gap-x);
+}
+
+@media (max-width: 991px) {
+  .two-cols {
+    grid-template-columns: 1fr;
+  }
+}
+
+.fillView {
+  max-width: none;
+  width: calc(100% + var(--view-pads-x) * 2);
+  margin-left: calc(var(--view-pads-x) * -1);
+  margin-right: calc(var(--view-pads-x) * -1);
+  padding-left: var(--view-pads-x);
+  padding-right: var(--view-pads-x);
+  padding-bottom: var(--view-pads-y);
+}
+
+.paddingBottom {
+  padding-bottom: var(--view-pads-y);
+}
+
+.section[data-bg="base"] {
+  background-color: rgb(var(--bg-color-base-rgb));
+}
+
+.section[data-bg="primary"] {
+  background-color: var(--bg-color-primary);
+}
+
+.section[data-bg="secondary"] {
+  background-color: var(--bg-color-secondary);
+}
+
+.section[data-bg="tertiary"] {
+  background-color: var(--bg-color-tertiary);
+}
+
+.section[data-bg="quarternary"] {
+  background-color: var(--bg-color-quarternary);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--block-gap-x) var(--block-gap-y);
+}

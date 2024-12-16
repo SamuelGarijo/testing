@@ -1,0 +1,79 @@
+[
+  {
+    "icon": "widgets",
+    "iconLabel": "Widgets",
+    "src": "/demos/widgets/index.html",
+    "theme": "purple",
+    "width": 400,
+    "height": 226,
+    "res": "1.2x",
+    "title": "Many Widgets",
+    "description": "<p>LVGL comes with 30+ built in widgets, such as Arc, Bar, Calendar, Chart, Checkbox, Drop-down list, Keyboard, Meter, Message box, Switch, Table, Tabview, Text area.</p><p>With these widgets, what you see in smartphone apps can be realized with LVGL as well.</p><p>These widgets can be created and deleted real time. This way you can save RAM by dynamically creating only currently visible screens and widgets.</p>"
+  },
+  {
+    "icon": "vector-editing",
+    "iconLabel": "Rendering",
+    "src": "/demos/thermostat/index.html",
+    "theme": "blue",
+    "width": 320,
+    "height": 240,
+    "res": "1x",
+    "title": "Rendering features",
+    "description": "<p>LVGL comes with powerful software render engine which can draw anti-aliased widgets in a vector graphic way using minimal resources.</p><ul><li>Rectangle with radius</li><li>Border with radius</li><li>Horizontal and vertical gradients</li><li>Box shadow</li><li>Skew lines</li><li>Arcs</li><li>Scale and rotate images or any widget</li><li>Masking</li></ul>"
+  },
+  {
+    "icon": "styles",
+    "iconLabel": "Styles",
+    "src": "/demos/slider/index.html",
+    "theme": "magenta",
+    "width": 320,
+    "height": 240,
+    "res": "1x",
+    "title": "Styles",
+    "description": "<p>You can choose from 100+ style properties to style the widgets run-time. It makes possible to dynamically change the theme of the UI or even animate the styles. It also saves flash as you need to use fewer images.</p><p>The widgets can be styled in any states, like pressed, checked, focused, disabled. Any parts of the widgets can be customized as well. For example a slider is composed of a main, an indicator and a knob part, whose appearance can be freely adjusted.</p><p>On top of that, with the use of transitions you make can LVGL automatically animate the styles on state changes.</p>"
+  },
+  {
+    "icon": "layout",
+    "iconLabel": "Layouts",
+    "src": "/demos/flex/index.html",
+    "theme": "light",
+    "width": 464,
+    "height": 320,
+    "res": "1.5x",
+    "title": "Layouts",
+    "description": "<p>With the use of the powerful built-in layouts you don't have to position the widgets manually.</p><p>The flex layout allows you to arrange even hundreds of items lightning fast according to the policies you can set.</p><p>The grid layout helps to add the widgets into the cells of a user defined grid and align them as you need.</p><p>Simply aligning widgets to any side of their parent or using percentage units also help a lot to easily create responsive UIs.</p><p>All these layouts are updated automatically if you change any content, size or position.</p>"
+  },
+  {
+    "icon": "multi-language",
+    "iconLabel": "Fonts",
+    "src": "/demos/multilang/index.html",
+    "theme": "green",
+    "width": 313,
+    "height": 426,
+    "res": "1.5x",
+    "title": "Fonts and multi-language support",
+    "description": "<p>You can use 1, 2, 4, 8 bit-per-pixel fonts, compressed fonts, render glyphs from TTF, or WOFF files using FreeType (for MPUs) or TinyTTF (for MCUs)</p><p>All strings are UTF-8 decoded and LVGL's type settings engine supports Arabic, Persian, Hebrew, Thai, Chinese, Japanese, Korean and many other languages. You can even mix Right-to-Left and Left-to-Right writing directions.</p><p>Fallback fonts, and emojis are also supported.</p>"
+  },
+  {
+    "icon": "transform",
+    "iconLabel": "Transformations",
+    "src": "/demos/transform/index.html",
+    "theme": "orange",
+    "width": 285,
+    "height": 285,
+    "res": "1.4x",
+    "title": "Transformations",
+    "description": "<p>Any library can transform images, but in LVGL we pushed it one level further. </p><p>You can rotate or scale any widget drawn by LVGL. Even nested transformations are supported on the children.</p><p>The touch gestures are transformed for the widgets, so for example, lists scroll in their rotated direction.</p>"
+  },
+  {
+    "icon": "scroll",
+    "iconLabel": "Scrolling",
+    "src": "/demos/scroll/index.html",
+    "theme": "red",
+    "width": 285,
+    "height": 285,
+    "res": "1.4x",
+    "title": "Scrolling",
+    "description": "<p>Smooth scrolling is crucial to make an impressive, user friendly, smartphone-like user experience.</p><p>In LVGL scrolling is super simple: if a widget's children are out of the widget's bounding box, the widget will be scrollable. That's it. No need for a special scrollable container or any extra tricks.</p><p>Snapping, Elastic scrolling, Scroll momentum, scroll chaining are all supported.</p>"
+  }
+]

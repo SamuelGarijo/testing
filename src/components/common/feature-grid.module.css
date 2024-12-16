@@ -1,0 +1,40 @@
+.featureGrid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--grid-gap-x);
+}
+@media (max-width: 767px) {
+  .featureGrid {
+    grid-template-columns: 1fr;
+    row-gap: var(--gap-8);
+  }
+}
+
+.featureGridItem {
+  container: gridItem / inline-size;
+}
+
+.featureGridItemContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-3);
+  padding-left: 5rem;
+}
+
+.featureGridItemContent > :first-child {
+  position: absolute;
+  left: 0;
+}
+
+@container gridItem (width < 480px) {
+  .featureGridItemContent {
+    padding-left: 0;
+  }
+
+  .featureGridItemContent > :first-child {
+    position: relative;
+    margin-bottom: var(--gap-2);
+  }
+}

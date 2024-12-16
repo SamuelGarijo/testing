@@ -1,0 +1,32 @@
+<html>
+  <style>
+    p {
+      margin: 0;
+    }
+    body {
+      margin: 0;
+    }
+    html {
+      overflow: hidden;
+    }
+  </style>
+  <body style="overflow: hidden">
+    <p id="output" />
+    <canvas id="canvas" width="480" height="272"></canvas>
+    <script>
+      var Module = {
+        print: function (text) {
+          console.log(text);
+        },
+        printErr: function (text) {
+          console.error(text);
+        },
+        canvas: (function () {
+          var canvas = document.getElementById("canvas");
+          return canvas;
+        })(),
+      };
+    </script>
+    <script async type="text/javascript" src="lvgl.js"></script>
+  </body>
+</html>

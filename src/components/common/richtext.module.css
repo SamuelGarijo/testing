@@ -1,0 +1,184 @@
+.richtext {
+  font-style: normal;
+  line-height: 166%;
+  letter-spacing: -0.02em;
+}
+
+.richtext > * + * {
+  margin-top: 1.5rem;
+}
+
+.richtext h4 + ul {
+  margin-top: 0.25rem;
+}
+
+.richtext strong {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.richtext ul {
+  list-style-type: "—";
+  padding-inline-start: 1rem;
+}
+
+.richtext ol {
+  position: relative;
+  counter-reset: list-item;
+  list-style-type: none;
+  padding-inline-start: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-4);
+}
+
+.richtext li {
+  position: relative;
+  padding-left: 0.5rem;
+  color: var(--color-tertiary);
+}
+
+.richtext ul li::marker {
+  color: var(--border-color-primary);
+}
+
+.richtext ol li::before {
+  content: counter(list-item);
+  position: absolute;
+  border: 1px solid var(--border-color-primary);
+  background-color: var(--bg-color-primary);
+  color: var(--color-tertiary);
+  width: 1.75em;
+  height: 1.75em;
+  text-align: center;
+  display: inline-block;
+  line-height: 1.75em;
+  font-family: var(--font-monospace);
+  font-size: 0.75em;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  left: -1.5rem;
+  top: 0.125em;
+  z-index: 1;
+}
+
+.richtext ol li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: calc(-0.75rem - 1px);
+  top: 0;
+  height: calc(100% + var(--gap-4));
+  border-left: 1px solid var(--border-color-tertiary);
+}
+
+.richtext a {
+  font-weight: 600;
+  color: var(--color-link);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: fit-content;
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+
+.richtext a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  width: 100%;
+  height: 1px;
+  background-color: transparent;
+  transform-origin: center;
+  transform: scaleX(0);
+  transition: transform 0.3s var(--ease-out-expo), background-color 0.3s var(--ease-out-expo);
+}
+
+.richtext a:hover::after {
+  transform: scaleX(1);
+  background-color: var(--color-link);
+}
+
+.richtext a.muted {
+  color: var(--color-primary);
+}
+
+.richtext h1:not(:first-child),
+.richtext h2:not(:first-child),
+.richtext h3:not(:first-child) {
+  margin-top: var(--block-pads-y);
+}
+
+.richtext code {
+  font-family: var(--font-monospace);
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  background-color: var(--bg-color-secondary);
+  color: var(--color-primary);
+  border-radius: var(--radius-sm);
+}
+
+.richtext pre {
+  margin: 1rem 0;
+  display: block;
+  font-family: var(--font-monospace);
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 1rem;
+  background-color: var(--bg-color-secondary);
+  color: var(--color-primary);
+  border-radius: var(--radius-sm);
+  overflow: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+  width: 100%;
+}
+
+.2xl {
+  font-size: 1.5rem;
+}
+
+.xl {
+  font-size: 1.25rem;
+}
+
+.lg {
+  font-size: 1.125rem;
+}
+
+.md {
+  font-size: 1rem;
+}
+
+.sm {
+  font-size: 0.875rem;
+}
+
+.xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.inherit {
+  color: inherit;
+}
+
+.primary {
+  color: var(--color-primary);
+}
+
+.secondary {
+  color: var(--color-secondary);
+}
+
+.tertiary {
+  color: var(--color-tertiary);
+}
+
+.quarternary {
+  color: var(--color-quarternary);
+}

@@ -1,0 +1,18 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <line
+    x1="11.75"
+    y1="4.31066"
+    x2="4.32538"
+    y2="11.7353"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round" />
+  <line
+    x1="11.6893"
+    y1="11.75"
+    x2="4.26472"
+    y2="4.32538"
+    stroke="currentColor"
+    stroke-width="1.5"
+    stroke-linecap="round" />
+</svg>

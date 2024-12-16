@@ -1,0 +1,34 @@
+.services {
+}
+
+.visual {
+  position: relative;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-start;
+  gap: var(--gap-4);
+}
+
+.splineWrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.splineWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .services {
+    flex-direction: column-reverse;
+  }
+  .splineWrapper {
+    position: relative;
+  }
+}

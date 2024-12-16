@@ -1,0 +1,112 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  margin: 0 auto;
+  max-width: var(--max-width);
+  width: 100%;
+  gap: var(--block-gap-x);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-2);
+  align-items: center;
+  padding-top: var(--gap-4);
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 0.175rem;
+}
+
+.partners {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem 5rem;
+  flex-wrap: wrap;
+}
+
+.partner {
+  position: relative;
+  display: flex;
+  height: 5rem;
+  align-items: center;
+}
+
+.bannerText {
+  position: absolute;
+  top: 0;
+  left: calc(-1 * var(--block-pads-x));
+  opacity: 0;
+  pointer-events: none;
+  width: 25rem;
+  background-color: rgb(var(--bg-color-base-rgb));
+  box-shadow: 0 0 0 1px var(--border-color-quarternary), var(--shadow-lg);
+  border-radius: var(--radius-lg);
+  z-index: var(--z-index-below);
+  overflow: hidden;
+  transform: translateY(1rem);
+  transition: opacity 0.3s var(--ease-out-expo), transform 0.3s var(--ease-out-expo);
+  isolation: isolate;
+}
+
+.alignRight {
+  left: auto;
+  right: calc(-1 * var(--block-pads-x));
+}
+
+.bannerTextInner {
+  margin-top: 5rem;
+  padding: var(--block-pads-x);
+  font-weight: 400;
+  background-color: var(--bg-color-primary);
+  border-top: 1px solid var(--border-color-quarternary);
+}
+
+@media (max-width: 1023px) {
+  .header {
+    align-items: center;
+    width: 100%;
+  }
+  .wrapper {
+    align-items: center;
+    gap: var(--gap-6);
+  }
+  .partners {
+    max-width: none;
+    width: 100%;
+    justify-content: center;
+    gap: 1rem 4rem;
+  }
+
+  .partner {
+    height: 4rem;
+  }
+}
+
+@media (max-width: 559px) {
+  .partners {
+    gap: 0rem 2rem;
+  }
+
+  .partner {
+    scale: 0.85;
+  }
+}
+
+@media (min-width: 992px) {
+  .partner:hover {
+    z-index: var(--z-index-above);
+  }
+  .partner:hover .bannerText {
+    transform: translateY(0);
+    transition: opacity 0.3s var(--ease-out-expo), transform 0.3s var(--ease-out-expo), visibility 0s linear 0s;
+    opacity: 1;
+  }
+}

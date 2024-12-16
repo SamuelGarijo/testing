@@ -1,0 +1,24 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--block-gap-x);
+  width: 100%;
+  padding: var(--view-pads-y) 0;
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+.titleWrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.title {
+  position: sticky;
+  top: calc(var(--block-pads-y) + var(--main-nav-height));
+  padding-right: var(--block-pads-x);
+}

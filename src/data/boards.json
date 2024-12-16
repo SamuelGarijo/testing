@@ -1,0 +1,1002 @@
+[
+  {
+    "type": "repository",
+    "published": true,
+    "date": "2024-06-12",
+    "logo": "riverdi",
+    "vendor": "Riverdi",
+    "title": "10.1-inch STM32 Embedded Display",
+    "description": "STM32 Embedded 10.1” display is all-in-one complete and open-platform solution being able to independently handle the visual layer of devices with the need for high computing performance. The STM32 Embedded Displays series are industrial-quality LCD-TFT solutions based on the STM32H757XIH6 microcontroller.",
+    "images": [
+      {
+        "src": "/images/boards/riverdi-10.1-inch-STM32-back.webp",
+        "size": "100%",
+        "width": "1200",
+        "height": "793",
+        "left": "15%",
+        "top": "40%",
+        "rotation": "0deg"
+      },
+      {
+        "src": "/images/boards/riverdi-10.1-inch-STM32-front.webp",
+        "size": "100%",
+        "width": "1200",
+        "height": "793",
+        "left": "-20%",
+        "top": "0",
+        "rotation": "0deg"
+      }
+    ],
+    "features": {
+      "MCU": "STM32H757XIH6 (Cortex-M7 + M4 core, 480MHz)",
+      "RAM": "1MB internal, 8MB external (32 bit access)",
+      "Flash": "2MB internal, 64MB external flash",
+      "GPU": "Chrom-ART (DMA2D)",
+      "Display size": "10.1”",
+      "Display resolution": "1280x800"
+    },
+    "links": [
+      ["LVGL Project on Github", "https://github.com/lvgl/lv_port_riverdi_101-stm32h7"],
+      [
+        "Buy now",
+        "https://riverdi.com/product/10-1-inch-lcd-display-capacitive-touch-panel-optical-bonding-uxtouch-stm32h7-rvt101hvsnwc00-b"
+      ]
+    ]
+  },
+  {
+    "type": "repository",
+    "published": true,
+    "date": "2024-06-12",
+    "logo": "riverdi",
+    "vendor": "Riverdi",
+    "title": "7-inch STM32 Embedded Display",
+    "description": "STM32 Embedded 5” display is all-in-one complete and open-platform solution being able to independently handle the visual layer of devices with the need for high computing performance. The 5-inch STM32 Embedded Displays series are industrial-quality LCD-TFT solutions based on the STM32U599NJH6Q or STM32U5A9NJH6Q microcontroller.",
+    "images": [
+      {
+        "src": "/images/boards/riverdi-7-inch-STM32-back.webp",
+        "size": "100%",
+        "width": "1200",
+        "height": "808",
+        "left": "15%",
+        "top": "40%",
+        "rotation": "0deg"
+      },
+      {
+        "src": "/images/boards/riverdi-7-inch-STM32-front.webp",
+        "size": "100%",
+        "width": "1200",
+        "height": "808",
+        "left": "-20%",
+        "top": "0",
+        "rotation": "0deg"
+      }
+    ],
+    "features": {
+      "MCU": "STM32H757XIH6 (Cortex-M7 + M4 core, 480MHz)",
+      "RAM": "1MB internal, 8MB external (32 bit access)",
+      "Flash": "2MB internal, 64MB external flash",
+      "GPU": "Chrom-ART (DMA2D)",
+      "Display size": "7.0”",
+      "Display resolution": "1024x600"
+    },
+    "links": [
+      ["LVGL Project on Github", "https://github.com/lvgl/lv_port_riverdi_70-stm32h7"],
+      [
+        "Buy now",
+        "https://riverdi.com/product/7-inch-lcd-display-capacitive-touch-panel-optical-bonding-uxtouch-stm32h7-rvt70hssnwc00-b"
+      ]
+    ]
+  },
+  {
+    "type": "repository",
+    "published": true,
+    "date": "2024-06-12",
+    "logo": "riverdi",
+    "vendor": "Riverdi",
+    "title": "STM32U5",
+    "description": "STM32 Embedded 5” display is all-in-one complete and open-platform solution being able to independently handle the visual layer of devices with the need for high computing performance. The 5-inch STM32 Embedded Displays series are industrial-quality LCD-TFT solutions based on the STM32U599NJH6Q or STM32U5A9NJH6Q microcontroller.",
+    "images": [
+      {
+        "src": "/images/boards/riverdi-stmu5-back.webp",
+        "size": "100%",
+        "width": "1200",
+        "height": "840",
+        "left": "15%",
+        "top": "40%",
+        "rotation": "0deg"
+      },
+      {
+        "src": "/images/boards/riverdi-stmu5-front.webp",
+        "size": "100%",
+        "width": "1200",
+        "height": "840",
+        "left": "-20%",
+        "top": "0",
+        "rotation": "0deg"
+      }
+    ],
+    "features": {
+      "MCU": "STM32U599NJH6Q / STM32U5A9NJH6Q",
+      "RAM": "2.5MB",
+      "Flash": "4MB",
+      "GPU": "Neo-Chrom (GPU2D), Chrom-Art (DMA2D), Chrom-GRC (GFXMMU)",
+      "Display size": "5.0”",
+      "Display resolution": "800x480"
+    },
+    "links": [
+      ["LVGL Project on Github", "https://github.com/lvgl/lv_port_riverdi_stm32u5"],
+      [
+        "Buy now",
+        "https://riverdi.com/product/5-inch-lcd-display-capacitive-touch-panel-optical-bonding-uxtouch-stm32u5-rvt50hqsnwc00-b"
+      ]
+    ]
+  },
+  {
+    "type": "repository",
+    "published": true,
+    "date": "2024-06-03",
+    "logo": "renesas",
+    "vendor": "Renesas",
+    "title": "RX72N-ENVISION-KIT",
+    "description": "Equipped with 32-bit microcomputer, RX family flagship RX72N is an excellent choice for GUI creation using LCD, HMI development such as voice input/output, and IoT device development using Wi-Fi, BLE or Ethernet. By using LVGL's demo repository with Renesas' ecosystem, you can experience immediately and develop quickly.",
+    "images": [
+      {
+        "src": "/images/boards/RX72N-Envision-kit-back.webp",
+        "size": "110%",
+        "width": "1200",
+        "height": "641",
+        "left": "20%",
+        "top": "40%",
+        "rotation": "0deg"
+      },
+      {
+        "src": "/images/boards/RX72N-Envision-kit-front.webp",
+        "size": "110%",
+        "width": "1200",
+        "height": "627",
+        "left": "-25%",
+        "top": "0",
+        "rotation": "0deg"
+      }
+    ],
+    "features": {
+      "MCU": "R5F572NNHDFB (RXv3, 240MHz)",
+      "RAM": "1MB internal SRAM",
+      "Flash": "4MB internal, 32MB external QSPI Flash",
+      "GPU": "Dave2D",
+      "Display size": "4.3”",
+      "Display resolution": "480x272"
+    },
+    "links": [
+      ["LVGL Project on Github", "https://github.com/lvgl/lv_port_renesas_rx72n-envision-kit"],
+      ["Buy now", "https://www.renesas.com/rx72n-envision-kit"]
+    ]
+  },
+  {
+    "type": "repository",
+    "published": true,
+    "date": "2024-06-03",
+    "logo": "renesas",
+    "vendor": "Renesas",
+    "title": "EK-RA6M3G",
+    "description": "The EK-RA6M3G evaluation kit enables users to seamlessly evaluate the features of the RA6M3 MCU Group and develop embedded systems applications using Renesas’ Flexible Software Package (FSP) and e2 studio IDE. Utilize rich on-board features along with your choice of popular ecosystem add-ons to bring your big ideas to life.",
+    "images": [
+      {
+        "src": "/images/boards/EK-RA6M3.webp",
+        "size": "170%",
+        "width": "1274",
+        "height": "600",
+        "left": "20%",
+        "top": "10%",
+        "rotation": "0deg"
+      },
+      {
+        "src": "/images/boards/EK-RA6M3.webp",
+        "size": "170%",
+        "width": "1274",
+        "height": "600",
+        "left": "-90%",
+        "top": "0%",
+        "rotation": "0deg"
+      }
+    ],
+    "features": {
+      "MCU": "R7FA6M3AH3CFC (Cortex-M4, 120MHz)",
+      "RAM": "640kB internal SRAM",
+      "Flash": "2MB internal, 32MB external QSPI Flash",
+      "GPU": "Dave2D",
+      "Display Resolution": "480x272",
+      "Display size": "4.3”"
+    },
+    "links": [
+      ["LVGL Project on Github", "https://github.com/lvgl/lv_port_renesas_ek-ra6m3g"],
+      ["Buy now", "https://renesas.com/ek-ra6m3g"]
+    ]
+  },
+  {
+    "type": "repository",
+    "published": true,
+    "date": "2024-06-03",
+    "logo": "renesas",
+    "vendor": "Renesas",
+    "title": "EK-RA8D1",
+    "description": "The EK-RA8D1 evaluation kit enables users to effortlessly evaluate the features of the RA8D1 MCU Group and develop embedded systems applications using Renesas’ Flexible Software Package (FSP) and e2 studio IDE. Utilize rich on-board features along with your choice of popular ecosystem add-ons to bring your big ideas to life.",
+    "images": [
+      {
+        "src": "/images/boards/EK-RA8D1.webp",
+        "size": "160%",
+        "width": "1227",
+        "height": "600",
+        "left": "20%",
+        "top": "25%",
+        "rotation": "0deg"
+      },
+      {
+        "src": "/images/boards/EK-RA8D1.webp",
+        "size": "160%",
+        "width": "1227",
+        "height": "600",
+        "left": "-80%",
+        "top": "0%",
+        "rotation": "0deg"
+      }
+    ],
+    "features": {
+      "MCU": "R7FA8D1BHECBD (Cortex-M85, 480MHz)x",
+      "RAM": "1MB internal, 64MB external",
+      "Flash": "2MB internal, 64MB external Octo-SPI flash",
+      "GPU": "Dave2D",
+      "Resolution": "480x854",
+      "Display size": "4.5\""
+    },
+    "links": [
+      ["LVGL Project on Github", "https://github.com/lvgl/lv_port_renesas_ek-ra8d1_gcc"],
+      ["Buy now", "https://renesas.com/ek-ra8d1"]
+    ]
+  },
+  {
+    "type": "review",
+    "published": true,
+    "date": "2024-04-18",
+    "vendor": "4D Systems",
+    "logo": "4d-systems",
+    "title": "gen4-ESP32-32CT",
+    "certificate": "standard",
+    "home": {
+      "image_file": "gen4-ESP32-32CT.png",
+      "highlighted": true
+    },
+    "slug": "4d-systems-gen4-ESP32-32CT",
+    "video": "https://www.youtube.com/watch?v=eecqK8bRNHo",
+    "links": [
+      ["Read more", "https://blog.lvgl.io/2024-04-18/4D-Systems-SPI-board-review"],
+      ["Buy now", "https://4dsystems.com.au/product-category/intelligent-display-modules/gen4-esp32-display-modules/"]
+    ],
+    "description": "The gen4 – ESP32 series of modules Designed and Manufactured by 4D Systems range from 2.4\" to 3.5\" display sizes with resolutions from 240x320 to 320x480 offering an SPI Interface between the screen and the ESP32-S3R8 Processor. Available in Non-Touch, Capacitive Touch, and Capacitive Touch with Cover Lens Bezel (CLB). The ESP32-S3R8 Processor makes available multiple GPIO which include UART, SPI, I2C, PWM, and Analog functionality, while also serving interfaces for the LCD Touch screen, Quad SPI Flash, microSD Card, and Native USB-C. The user interface to the gen4-ESP32 series is a 30-pin FPC/ZIF socket, designed for a 30-way 0.5mm pitch FFC cable, for easy and simple connection to an application or motherboard, or for connecting to accessory boards for a range of functionality advancements.",
+    "features": {
+      "MCU": "ESP32-S3R8 (dual-core Xtensa, up to 240 MHz)",
+      "RAM": "512kB SRAM (internal) + 8MB Octal SPI PSRAM (external)",
+      "Flash": "384kB ROM (internal), 16MB Quad SPI NOR flash (external, XIP)",
+      "GPU": "None",
+      "Resolution": "240x320",
+      "Display size": "3.2\"",
+      "Color depth": "16 bit, RGB565",
+      "Disp. technology": "TN",
+      "DPI": "125 px/inch",
+      "Brightness": "190 nit",
+      "Touch pad": "Capacitive",
+      "Avg. FPS": "24",
+      "Power supply": "USB Type C (5V)",
+      "Others": "U.FL connector for external antenna"
+    }
+  },
+  {
+    "type": "review",
+    "published": true,
+    "date": "2024-04-18",
+    "vendor": "4D Systems",
+    "logo": "4d-systems",
+    "title": "gen4-ESP50-32CT",
+    "certificate": "standard",
+    "video": "https://www.youtube.com/watch?v=af4orz9v7Bc",
+    "links": [
+      ["Read more", "https://blog.lvgl.io/2024-04-18/4D-Systems-SPI-board-review"],
+      ["Buy now", "https://4dsystems.com.au/product-category/intelligent-display-modules/gen4-esp32-display-modules/"]
+    ],
+    "description": "The gen4 – ESP32 series of modules Designed and Manufactured by 4D Systems range from 4.3\" to 9\" display sizes with a resolution of 800x480 offering an RGB Interface between the screen and the ESP32-S3R8 Processor. Available in Non-Touch, Resistive Touch, Capacitive Touch, and Capacitive Touch with Cover Lens Bezel (CLB). The ESP32-S3R8 Processor makes available multiple GPIO which include UART, SPI, I2C, PWM, and Analog functionality, while also serving interfaces for the LCD Touch screen, Quad SPI Flash, microSD Card, and Native USB-C. The user interface to the gen4-ESP32 series is a 30-pin FPC/ZIF socket, designed for a 30-way 0.5mm pitch FFC cable, for easy and simple connection to an application or motherboard, or for connecting to accessory boards for a range of functionality advancements.",
+    "features": {
+      "MCU": "ESP32-S3R8 (dual-core Xtensa, up to 240 MHz)",
+      "RAM": "512kB SRAM (internal) + 8MB Octal SPI PSRAM (external)",
+      "Flash": "384kB ROM (internal), 16MB Quad SPI NOR flash (external, XIP)",
+      "GPU": "None",
+      "Resolution": "800x480",
+      "Display size": "5.0\"",
+      "Color depth": "16 bit, RGB565",
+      "Disp. technology": "IPS",
+      "DPI": "186 px/inch",
+      "Brightness": "475 nit",
+      "Touch pad": "Capacitive",
+      "Avg. FPS": "24",
+      "Power supply": "USB Type C (5V)",
+      "Others": "30 pin FPC socket for GPIO, UART, SPI, I2C, PWM, analog"
+    }
+  },
+  {
+    "type": "review",
+    "published": true,
+    "date": "2024-02-13",
+    "logo": "renesas",
+    "vendor": "Renesas",
+    "title": "EK-RA8D1",
+    "description": "The EK-RA8D1 evaluation kit enables users to effortlessly evaluate the features of the RA8D1 MCU Group and develop embedded systems applications using Renesas' Flexible Software Package (FSP) and e2 studio IDE. Utilize rich on-board features along with your choice of popular ecosystem add-ons to bring your big ideas to life.",
+    "certificate": "professional",
+    "features": {
+      "MCU": "R7FA8D1BHECBD (Cortex-M85, 480MHz)",
+      "RAM": "1MB internal, 64MB external",
+      "Flash": "2MB internal, 64MB external Octo-SPI flash",
+      "GPU": "Dave2D",
+      "Resolution": "480x854",
+      "Interface": "2-lane MIPI",
+      "Display size": "4.5\"",
+      "Color depth": "24 bit",
+      "Disp. technology": "IPS",
+      "DPI": "217 px/inch",
+      "Touch pad": "Capacitive",
+      "Avg. performance": "22% CPU load at 25 FPS",
+      "Power supply": "5V micro USB",
+      "Others": "Camera expansion board, Micro USB device cable (type-A male to micro-B male), Micro USB host cable (type-A male to micro-B male), Ethernet patch cable"
+    },
+    "video": "https://www.youtube.com/watch?v=LHPIqBV_MGA",
+    "links": [
+      ["Read more", "https://blog.lvgl.io/2024-02-13/renesas-ek-ra8d1-review"],
+      ["Buy now", "https://renesas.com/ek-ra8d1"]
+    ]
+  },
+  {
+    "type": "review",
+    "published": true,
+    "date": "2024-02-06",
+    "logo": "riverdi",
+    "vendor": "Riverdi",
+    "title": "Embedded 10.1” display",
+    "description": "STM32 Embedded 10.1” display is all-in-one complete and open-platform solution being able to independently handle the visual layer of devices with the need for high computing performance. The STM32 Embedded Displays series are industrial-quality LCD-TFT solutions based on the STM32H757XIH6 microcontroller. It has been designed in a way that allows to meet most of the hardware and programming challenges faced by engineers, including access to all interfaces.",
+    "certificate": "standard",
+    "features": {
+      "MCU": "STM32H757XIH6 (Cortex-M7 + M4 core, 480MHz)",
+      "RAM": "1MB internal, 8MB external (32 bit access)",
+      "Flash": "2MB internal, 64MB external flash",
+      "GPU": "Chrom-ART (DMA2D)",
+      "Resolution": "1280x800",
+      "Display size": "10.1\"",
+      "Color depth": "24 bit",
+      "Disp. technology": "IPS",
+      "DPI": "150 px/inch",
+      "Touch pad": "Industrial Capacitive or no touch",
+      "Avg. performance": "25 FPS",
+      "Power supply": "6-48V",
+      "Others": "CAN FD, RS232, RS485, USB, DRV2605L (haptic driver), RiBUS, ETH addon, universal interface connector (ability to connect I2C, UART, USART, SPI, USB, PWM, DAC, ADC)"
+    },
+    "video": "https://www.youtube.com/watch?v=NGfRHC7HjAs",
+    "links": [
+      ["Read more", "https://blog.lvgl.io/2024-02-06/riverdi-stm32-10-inches-review"],
+      [
+        "Buy now",
+        "https://riverdi.com/product/10-1-inch-lcd-display-capacitive-touch-panel-optical-bonding-uxtouch-stm32h7-rvt101hvsnwc00-b"
+      ]
+    ]
+  },
+  {
+    "type": "review",
+    "published": true,
+    "date": "2024-02-06",
+    "logo": "riverdi",
+    "vendor": "Riverdi",
+    "title": "Embedded 7.0” display",
+    "description": "STM32 Embedded 7.0” display is all-in-one complete and open-platform solution being able to independently handle the visual layer of devices with the need for high computing performance. The STM32 Embedded Displays series are industrial-quality LCD-TFT solutions based on the STM32H757XIH6 microcontroller. It has been designed in a way that allows to meet most of the hardware and programming challenges faced by engineers, including access to all interfaces.",
+    "certificate": "professional",
+    "features": {
+      "MCU": "STM32H757XIH6 (Cortex-M7 + M4 core, 480MHz)",
+      "RAM": "1MB internal, 8MB external (32 bit access)",
+      "Flash": "2MB internal, 64MB external flash",
+      "GPU": "Chrom-ART (DMA2D)",
+      "Resolution": "1024x600",
+      "Display size": "7.0\"",
+      "Color depth": "24 bit",
+      "Disp. technology": "IPS",
+      "DPI": "170 px/inch",
+      "Touch pad": "Industrial Capacitive or no touch",
+      "Avg. FPS": "32",
+      "Power supply": "6-48V",
+      "Others": "SD Card slot, Battery holder, 2 x CAN FD, RS232, RS485, USB, DRV2605L (haptic driver), RiBUS, ETH addon with PoE,- universal interface connector (ability to connect &nbsp;I2C, UART, USART, SPI, USB, PWM, DAC, ADC)"
+    },
+    "video": "https://www.youtube.com/watch?v=Uly8U6KlTzE",
+    "links": [
+      ["Read more", "https://blog.lvgl.io/2024-02-06/riverdi-stm32-7-inches-review"],
+      [
+        "Buy now",
+        "https://riverdi.com/product/7-inch-lcd-display-capacitive-touch-panel-optical-bonding-uxtouch-stm32h7-rvt70hssnwc00-b"
+      ]
+    ]
+  },
+  {
+    "type": "review",
+    "published": true,
+    "date": "2024-02-06",
+    "logo": "riverdi",
+    "vendor": "Riverdi",
+    "title": "Embedded 5.0” display",
+    "description": "The Riverdi RVT50HQSNWC00-B STM32 Embedded 5.0” display is an all-in-one complete and open-platform solution capable of independently handling the visual layer of devices with the need for high computing performance. The STM32 5.0” Embedded Displays series are industrial-quality LCD-TFT solutions based on the STM32U599NJH6Q/STM32U5A9NJH6Q microcontroller. They have been designed in a way that allows them to meet most of the hardware and programming challenges faced by engineers, including access to all interfaces.",
+    "certificate": "professional",
+    "features": {
+      "MCU": "STM32U599NJH6Q/STM32U5A9NJH6Q",
+      "RAM": "2.5MB (internal)",
+      "Flash": "4MB (internal)",
+      "GPU": "Neo-Chrom (GPU2D), Chrom-Art (DMA2D), Chrom-GRC (GFXMMU)",
+      "Resolution": "800x480",
+      "Display size": "5.0\"",
+      "Color depth": "24 bit, RGB888",
+      "Brightness": "850 nit",
+      "Disp. technology": "IPS",
+      "DPI": "188 px/inch",
+      "Touch pad": "Projected Capacitive",
+      "Avg. FPS": "32",
+      "Power supply": "6-48V",
+      "Others": "USB, RS485, CAN FD, Micro SD card, Battery holder, RiBUS, 1.27mm double row female pin header expansion connector (ability to connect I2C, UART, USART, SPI, USB, PWM, DAC, ADC)"
+    },
+    "video": "https://www.youtube.com/watch?v=3sdUdsvtNio",
+    "links": [
+      ["Read more", "https://blog.lvgl.io/2024-02-06/riverdi-stm32-5-inches-review"],
+      [
+        "Buy now",
+        "https://riverdi.com/product/5-inch-lcd-display-capacitive-touch-panel-optical-bonding-uxtouch-stm32u5-rvt50hqsnwc00-b"
+      ]
+    ]
+  },
+  {
+    "type": "review",
+    "published": true,
+    "date": "2023-12-16",
+    "logo": "generalplus",
+    "vendor": "Generalplus",
+    "title": "Generalplus GP328530A",
+    "description": "GP328530A, a highly integrated SoC by Generalplus, is a high cost-performance ratio solution for multi-media and video streaming applications. It is developed with a high performance and power efficient ARM's ARM926EJ-S core operating at up to CPU/system 513/171MHz with significant enhancements in image, video processing, and power management for power savings. Other features include DDR/DDR2 memory, GPDLA Deep Learning Accelerator, JPEG CODEC engine, TFT-LCD/MIPI DSI interface, MIPI CSI interface, scaling engine, Image Processing Unit (IPU), Picture Process Unit (PPU), Sound Process Unit (SPU), Ethernet MAC, USB 2.0 High speed etc. The GP328530A processor is designed to connect with various types of memory card interfaces such as SD and MMC. Not only does GP328530A feature the high-speed performance, but it is also a cost-effective system and - the most importantly - compatible with all ARM based programs.",
+    "certificate": "professional",
+    "image": "/images/boards/generalplus-gp328.webp",
+    "features": {
+      "MCU": "GP328530A (ARM926EJ-S core, up to 513MHz)",
+      "RAM": "238kB SRAM + 32MB DDR (internal)",
+      "ROM": "36kB (internal)",
+      "Flash": "8MB NOR + 128MB NAND (external)",
+      "GPU": "Generalplus proprietary 2D/2.5D Picture Process Unit, Generalplus proprietary AI Deep Learning Accelerator",
+      "Part number": "JLL043JGI50-43103",
+      "Resolution": "800x480",
+      "Display size": "4.3\"",
+      "Color depth": "24 bit, RGB888",
+      "Brightness": "500 nit",
+      "Disp. technology": "IPS",
+      "DPI": "217 px/inch",
+      "Touch pad": "Capacitive",
+      "Avg. FPS": "32",
+      "Power supply": "USB Type C (5V)",
+      "Others": "10/100Mb Ethernet RMII interface; TF socket for SD card/WIFI; USB2.0 HS host/device; MAX485 for RS485; RS232 port; EMAC connector for Ethernet or WIFI/BLE extension; CSI connector for CSI or SD/SPI interface extension; 4-channel ADC header connector; Audio codec with microphone input and speaker output"
+    },
+    "video": "https://www.youtube.com/watch?v=T7D_-XyZns0",
+    "links": [
+      ["Read more", "https://blog.lvgl.io/2023-12-16/generalplus-gp328530a-review"],
+      [
+        "Buy now",
+        "https://www.alibaba.com/product-detail/GP328530A-HMI-demo-board_10000014381929.html?spm=a2700.shop_plser.89.2.766738590NVIYM"
+      ]
+    ]
+  },
+  {
+    "type": "review",
+    "published": true,
+    "date": "2023-06-14",
+    "logo": "rt-thread",
+    "vendor": "RT-Thread, Renesas",
+    "title": "RA6M3 HMI board",
+    "description": "The RA6M3 HMI board is a high-cost-performance graphic evaluation kit brought to you by RT-Thread in collaboration with Renesas and LVGL. Say goodbye to traditional HMI + main control board hardware and hello to the full capabilities of HMI + IoT + control with just one set of hardware. With Renesas’ high-performance RA6M3 chip and RT-Thread’s software ecosystem at its core, the HMI Board packs a punch with its strong hardware performance and rich software ecosystem. This makes it easier than ever for developers to create cutting-edge GUI smart hardware products.",
+    "certificate": "standard",
+    "features": {
+      "MCU": "Renesas RA6M3 (Cortex-M4F core, 120MHz)",
+      "RAM": "640KB internal",
+      "Flash": "2MB internal",
+      "GPU": "Dave2D + JPEG decoder",
+      "Resolution": "480x272",
+      "Display size": "4.3\"",
+      "Color depth": "16 bit, RGB565",
+      "Disp. technology": "IPS",
+      "DPI": "128 px/inch",
+      "Touch pad": "Capacitive",
+      "Avg. FPS": "23",
+      "Power supply": "USB Type C (5V)",
+      "Others": "Ethernet, Audio, RW007 (SPI high-speed WIFI)"
+    },
+    "video": "https://www.youtube.com/watch?v=_lB6Mu711Kg",
+    "links": [
+      ["Read more", "https://blog.lvgl.io/2023-06-14/ra6m3-hmi-board-review"],
+      [
+        "Buy now",
+        "https://www.aliexpress.com/item/1005006018922975.html?gps-id=pcStoreJustForYou&amp;scm=1007.23125.137358.0&amp;scm_id=1007.23125.137358.0&amp;scm-url=1007.23125.137358.0&amp;pvid=1084e197-288f-4cdd-9630-42fb3e31c586&amp;_t=gps-id:pcStoreJustForYou,scm-url:1007.23125.137358.0,pvid:1084e197-288f-4cdd-9630-42fb3e31c586,tpp_buckets:668%232846%238112%231997&amp;pdp_npi=4%40dis%21HUF%2112749.70%2112749.7%21%21%21251.46%21%21%402101f01816950332827763602eb4f7%2112000035348846779%21rec%21HU%21%21ABS&amp;spm=a2g0o.store_pc_home.smartJustForYou_2006673320706.0"
+      ]
+    ]
+  },
+  {
+    "type": "review",
+    "published": true,
+    "date": "2023-05-09",
+    "logo": "elecrow",
+    "vendor": "Elecrow",
+    "title": "ESP Terminal 3.5\"",
+    "description": "This Elecrow terminal is a microcontroller based on the ESP32 master. It adopts Xtensa 32-bit LX7 dual-core processor with a main frequency of up to 240Mhz, supports 2.4GHz Wi-Fi and Bluetooth 5 (LE), and can easily handle common edge terminal device application scenarios, such as industrial control, agricultural production environment detection and processing, intelligent logistics monitoring, smart home scenarios and more. This terminal also has a 3.5-inch parallel RGB interface capacitive touch screen with a resolution of 320x480 to ensure perfect image output at a frame rate (FPS) of 60. On the back of this terminal, we have introduced 4 Crowtail interfaces, which can be used with our Crowtail series sensors, plug and play, and create more interesting projects quickly and conveniently. In addition, it is also equipped with an SD card slot for extended storage (SPI leads) and a buzzer function. It supports ESP-IDF and Arduino IDE development, and is compatible.",
+    "certificate": "standard",
+    "features": {
+      "MCU": "ESP32-S3 (dual core, up to 240 MHz)",
+      "RAM": "8 MB PSRAM (Octo SPI)",
+      "Flash": "16MB Flash (Octo SPI)",
+      "GPU": "None",
+      "Resolution": "480x320",
+      "Display size": "3.5\"",
+      "Color depth": "16 bit, RGB565",
+      "Disp. technology": "TN",
+      "DPI": "165 px/inch",
+      "Touch pad": "Capacitive",
+      "Avg. FPS": "26",
+      "Power supply": "USB Type C (5V)",
+      "Others": "4 Crowtail interfaces (HY2.0-4P connector), plug and play with various Crowtail sensor"
+    },
+    "video": "https://www.youtube.com/watch?v=OWOMkr3Ojz4",
+    "links": [
+      ["Read more", "https://blog.lvgl.io/2023-05-09/elecrow-esp_terminal_3_5-review"],
+      ["Buy now", "https://www.elecrow.com/display/hmi-dispaly.html?cat=261_esp-hmi-display"]
+    ]
+  },
+  {
+    "type": "review",
+    "published": true,
+    "date": "2023-05-03",
+    "logo": "dasqi",
+    "vendor": "DASQI",
+    "title": "Apollo4B",
+    "description": "DASQI Apollo4B board can display 454*454 Round AMOLED Display, QSPI interface, Capacitive touch pad, and  has SD-CARD slot , supported LVGL file system interface.The board also has RTK GPS high accuracy location positioning, Accelerometer + GYRO + E-Compass, Barometer, Current Sensor features, and  I2C/SPI/UART/MIPI interfaces.",
+    "certificate": "standard",
+    "features": {
+      "MCU": "Ambiq Apollo4 Blue (192MHz)",
+      "RAM": "1.8MB SRAM",
+      "Flash": "2MB of MRAM",
+      "GPU": "2D and 2.5D",
+      "Resolution": "454x454",
+      "Display size": "1.39\"",
+      "Color depth": "16 bit, RGB565",
+      "Disp. technology": "AMOLED",
+      "DPI": "460 px/inch",
+      "Touch pad": "Capacitive",
+      "Avg. FPS": "22",
+      "Power supply": "USB Type C (5V)",
+      "Others": "SD card slot, I2C/SPI/UART/MIPI,  Accelerometer, BMP390 Barometer, High Performance Barometric Pressure Sensor for Altitude Tracking, Current, Compass, Gyro, GNSS"
+    },
+    "video": "https://www.youtube.com/watch?v=1fkQWptttp4",
+    "links": [
+      ["Read more", "https://blog.lvgl.io/2023-05-03/dasqi-apollo4b-review"],
+      ["Buy now", "https://dasqi.com/apollo4b/"]
+    ]
+  },
+  {
+    "type": "review",
+    "published": true,
+    "date": "2023-03-17",
+    "logo": "ite",
+    "vendor": "ITE",
+    "title": "IT986x EVB",
+    "description": "IT986x SoC series is equipped with dual ARM9 CPUs which can operate at up to 800MHz. It has a powerful 2D graphics engine that supports up to 1080p video, allowing for the implementation of a GUI that is both vivid and responsive. As for the panel resolution, it can display up to 2160*1080 pixels. MIPI, RGB, LVDS and other panel interfaces are also supported. It is embedded with up to 1Gb DDR3 memory, with various peripheral interfaces reserved, giving designers great expandability. Support FreeRTOS within the comprehensive ITE SoC SDK.",
+    "certificate": "professional",
+    "features": {
+      "SoC": "800MHz 32-bit ARM9 (CPU1) + 400MHz 32-bit ARM9 (CPU2)",
+      "RAM": "Built-in 64MB DDR2",
+      "Flash": "External NOR flash 32MB",
+      "GPU": "2D Engine",
+      "Resolution": "1280x480",
+      "Display size": "6.8\"",
+      "Color depth": "24 bit, RGB888",
+      "Disp. technology": "IPS",
+      "DPI": "200 px/inch",
+      "Touch pad": "Capacitive",
+      "Avg. FPS": "42",
+      "Power supply": "12V adapter",
+      "Others": "USB 2.0 OTG, SD/SDIO, NOR/Nand Flash QSPI, Ethernet MAC 10/100 Mbps, Audio CODEC ADC, DAC, 4 I2C, 6 UART, 2 SPI, 8 ADC, 2 CAN, 1 RTC, Wireless Module (Plug in) 4G, WiFi, Bluetooth"
+    },
+    "video": "https://www.youtube.com/watch?v=LzG0BUDRv24",
+    "links": [
+      ["Read more", "https://blog.lvgl.io/2023-03-17/it986x-evb-review"],
+      ["Buy now", "https://soc.ite.com.tw/en/Contact"]
+    ]
+  },
+  {
+    "type": "review",
+    "published": true,
+    "date": "2023-01-18",
+    "logo": "nuvoton",
+    "vendor": "Nuvoton",
+    "title": "NuMaker-HMI-MA35D1-S1",
+    "description": "The NuMaker-HMI-MA35D1-S1 is an evaluation board for Nuvoton NuMicro MA35D1 series microprocessors, and consists of three parts: a NuMaker-SOM-MA35D16A81 SOM board, a NuMaker-BASE-MA35D1B1 base board and a 7” TFT-LCD daughter board. The SOM board integrates core components to simplify the system design, based on MA35D16A887C (BGA312 package, and stacking a 256 MB DDR), PMIC power solution, a 16 GB eMMC Flash, and two Gigabit Ethernet PHY. The NuMaker-HMI-MA35D1-S1 has rich peripherals such as 2 sets of Gigabit Ethernet, USB2.0 high-speed host and device, 2 sets of CAN FD, and SPI, I2C, UART, RS-485 serial communication ports for users to facilitate the evaluation in HMI and industrial control, home appliances, 2-wheel cluster, medical device, new energy applications, Machine Learning or your creative applications.",
+    "certificate": "professional",
+    "features": {
+      "CPU": "MPU MA35D16A887C, Dual Cortex-A35 Cores (800MHz), Single Cortex-M4 Core (180MHz)",
+      "RAM": "Internal stacking a 256MB DDR, Internal SRAM 128 + 256 KB",
+      "Flash": "128 KB Internal Boot ROM (IBR), 16 GB external eMMC Flash, 512MB external SPI NAND Flash, 1GB external raw NAND Flash",
+      "GPU": "GC520L 2D GPU",
+      "Resolution": "1024x600",
+      "Display size": "7\"",
+      "Color depth": "24 bit, RGB888",
+      "Disp. technology": "IPS",
+      "DPI": "170 px/inch",
+      "Touch pad": "Capacitive, or 4 or 5-wire resistive",
+      "Avg. FPS": "60 (small assets), 47 (large assets)",
+      "Power supply": "5V (USB micro)",
+      "Others": "1 Host/Device port and one Host port, 1 LCM connector to connect, 1 audio codec with microphone input and speaker output (With NAU88C22), 1 SIM card slot, 1 External Bus Interface (EBI) header connector, 1 Standard-SD (SD2.0) memory card slot, 1 8-channel ADC header connector, 1 MEMS Microphone. (MP34DT01-M), 1 MEMS G-Sensor. (MPU6500), 1 set of buzzer pads, 2 Gigabit Ethernet transformer devices and two RJ45 port connectors,  2 camera capture (CMOS sensor) header connectors, 2 sets of UART transceivers and DB9 connectors. (With SN75C3232EDR), 2 sets of RS485 transceivers and header connectors. (With SN65HVD11DR), 2 sets of CAN FD transceivers and header connectors. (TCAN337GDR), 2 user LEDs, 3 user key buttons"
+    },
+    "video": "https://www.youtube.com/watch?v=cQvobSRDeis",
+    "links": [
+      ["Read more", "https://blog.lvgl.io/2023-01-18/numaker-hmi-ma35d1-s1-review"],
+      [
+        "Buy now",
+        "https://direct.nuvoton.com/tw/numaker-hmi-ma35d1-s1?search_query=NuMaker-HMI-MA35D1-S1&amp;results=1"
+      ]
+    ]
+  },
+  {
+    "type": "review",
+    "published": true,
+    "date": "2022-12-08",
+    "logo": "st",
+    "vendor": "STMicroelectronics",
+    "title": "STM32H7B3I-DK",
+    "description": "The STM32H7B3I-DK Discovery kit is a complete demonstration and development platform for STMicroelectronics Arm® Cortex®-M7 core-based STM32H7B3LIH6QU microcontroller. The full range of hardware features available on the board helps users enhance their application development by an evaluation of almost all peripherals (such as USB OTG_HS, microSD, USART, FDCAN, audio DAC stereo with audio jack input and output, camera, SDRAM, Octo-SPI Flash memory and RGB interface LCD with capacitive touch panel). ARDUINO® Uno V3 connectors provide easy connection to extension shields or daughterboards for specific applications.",
+    "certificate": "standard",
+    "features": {
+      "CPU": "STM32H7B3LI",
+      "RAM": "1376 KB internal SRAM kB, 16 MB SDRAM",
+      "Flash": "2 MB internal Flash, 64 MB Octo-SPI NOR Flash memory",
+      "GPU": "DMA2D (ChromArt)",
+      "Resolution": "480x272",
+      "Display size": "4.3\"",
+      "Color depth": "24 bit, RGB888 or 16 bit, RGB565",
+      "Disp. technology": "TN",
+      "DPI": "128 px/inch",
+      "Touch pad": "Capacitive",
+      "Avg. FPS": "32",
+      "Power supply": "5V (USB micro)",
+      "Others": "Camera (8 bit), USB with Micro-AB, Stereo headset jack including analog microphone input, Audio jack for external speakers, microSD™ card, TAG-Connect 10-pin footprint, Arm® Cortex® 10-pin 1.27mm-pitch debug connector over STDC14 footprint, ARDUINO® Uno V3 expansion connector, STMod+ expansion connector, Audio daughterboard expansion connector, External I2C expansion connector"
+    },
+    "video": "https://www.youtube.com/watch?v=D-AfE6_-V8A",
+    "links": [
+      ["Read more", "https://blog.lvgl.io/2022-12-08/stm32h7b3i-review"],
+      ["Buy now", "https://www.st.com/en/evaluation-tools/stm32h7b3i-dk.html#sample-buy"]
+    ]
+  },
+  {
+    "type": "review",
+    "published": true,
+    "date": "2022-02-18",
+    "logo": "nuvoton",
+    "vendor": "Nuvoton",
+    "title": "NuMaker-HMI-N9H30",
+    "description": "Nuvoton N9H30 series with ARM926EJ-S core can operate at up to 300 MHz and can drive up to 1024x768 pixels in RGB parallel port. It integrated TFT LCD controller and 2D graphics accelerator, up to 16.7 million colors (24-bit) LCD screen output, and provides high resolution and high chroma to deliver gorgeous display effects. It embedded up to 64 MB DDRII SDRAM, along with ample hardware storage and computing space for excellent design flexibility.",
+    "certificate": "standard",
+    "features": {
+      "CPU": "N9H30F61IEC (or N9H30F63IEC)",
+      "RAM": "Built-in 64 MB DDR II Memory, 56 KB internal SRAM",
+      "Flash": "16 KB internal Boot ROM (IBR), external 128 MB NAND Flash and 16 MB SPI Flash",
+      "GPU": "GE2D",
+      "Resolution": "800x480",
+      "Display size": "7\"",
+      "Color depth": "24 bit, RGB888",
+      "Disp. technology": "TN",
+      "DPI": "133 px/inch",
+      "Touch pad": "Resistive",
+      "Avg. FPS": "22",
+      "Power supply": "5V (USB micro)",
+      "Others": "10/100Mb Ethernet RJ45, TF socket for SD card, USB2.0 HS and FS, MAX3485 for RS485, SN65HVD230 for CAN, 2 pcs of RS232 port"
+    },
+    "video": "https://www.youtube.com/watch?v=EqTG-3NHHAs",
+    "links": [
+      ["Read more", "https://blog.lvgl.io/2022-02-18/numaker-hmi-n9h30-review"],
+      ["Buy now", "https://direct.nuvoton.com/en/numaker-hmi-n9h30"]
+    ]
+  },
+  {
+    "type": "review",
+    "published": true,
+    "date": "2021-09-09",
+    "logo": "wireless-tag",
+    "vendor": "Wireless-Tag",
+    "title": "IDO-SMLCD72-V1-2EC",
+    "description": "IDO-SMLCD72-V1-2EC is powerful board with OpenWRT operating system, 1024x600 7” screen and 1.2 GHz CPU.",
+    "certificate": "professional",
+    "features": {
+      "CPU": "Sigmastar SSD202 ARM Cortex A7, 1.2 GHz",
+      "RAM": "128 MB",
+      "Flash": "128 MB",
+      "GPU": "None",
+      "Resolution": "1024x600",
+      "Display size": "7\"",
+      "Color depth": "24 bit, RGB888",
+      "Disp. technology": "IPS",
+      "DPI": "170 px/inch",
+      "Touch pad": "Capacitive",
+      "Avg. FPS": ">60",
+      "Power supply": "5V (USB-C)",
+      "Others": "Wireless card onboard, Extra ESP32-WROOM-32U for AIot, 4 GPIO available, 100Mbps Ethernet, 4pin speaker port, Analog microphone, Digital microphone, TF card, USB 2.0, 4 UART port, 4G cat1 module, RTC onboard, 1080P video decoder"
+    },
+    "video": "https://www.youtube.com/watch?v=ut0-dHNNsD4",
+    "links": [
+      ["Read more", "https://blog.lvgl.io/2021-09-09/ido-smlcd72-v1-2ec-review"],
+      [
+        "Buy now",
+        "https://www.alibaba.com/product-detail/IDO-SMLCD72-V1-2EC-Linux-7_1600175751279.html?spm=a2747.manage.0.0.2e6271d2MjBz8W"
+      ]
+    ]
+  },
+  {
+    "type": "review",
+    "published": true,
+    "date": "2021-09-09",
+    "logo": "wireless-tag",
+    "vendor": "Wireless-Tag",
+    "title": "WT-86-32-3ZW1",
+    "description": "WT-86-32-3ZW1 intelligent panel is a product based on ESP32-S2-WROVER module that drivers a 320×320 3.92” touch screen. The ESP module can also handle the wireless connection. It can be integrated into many intelligent products as a small and convenient intelligent panel.You can develop with ESP-IDF or the Wireless-Tag’s custom UI editor called 8ms.",
+    "certificate": "standard",
+    "features": {
+      "MCU": "ESP32-S2-WROVER (240 MHz)",
+      "RAM": "320 kB internal, 2 MB PSRAM",
+      "Flash": "16 MB",
+      "GPU": "None",
+      "Resolution": "320x320",
+      "Display size": "3.92\"",
+      "Color depth": "16 bit, RGB565",
+      "Disp. technology": "IPS",
+      "DPI": "115 px/inch",
+      "Touch pad": "Capacitive",
+      "Avg. FPS": "17",
+      "Power supply": "5V",
+      "Others": "WiFi IEEE 802.11 b/g/n, GPIO 4 available, Audio WT516P6core voice module"
+    },
+    "video": "https://www.youtube.com/watch?v=6TclkR-Y-c0",
+    "links": [
+      ["Read more", "https://blog.lvgl.io/2021-09-09/WT32-86-review"],
+      [
+        "Buy now",
+        "https://www.alibaba.com/product-detail/3-92-Inch-320-320-86_1700007792543.html?spm=a2747.manage.0.0.2e6271d2yYJnlo"
+      ]
+    ]
+  },
+  {
+    "type": "review",
+    "published": true,
+    "date": "2021-06-19",
+    "logo": "nxp",
+    "vendor": "NXP Semiconductors",
+    "title": "i.MX RT595 EVK",
+    "description": "The i.MX RT595 EVK features NXP’s advanced implementation of the Arm® Cortex®-M33 core, combined with an advanced GPU called VGLITE.",
+    "certificate": "standard",
+    "features": {
+      "MCU": "i.MX RT595 (200 MHz)",
+      "RAM": "Internal SRAM: 5 MB, External PSRAM: 8 MB",
+      "Flash": "External OctalSPI NOR Flash: 64 MB, External QuadSPI NOR Flash: 8 MB, eMMC: 16 GB",
+      "GPU": "VGLITE",
+      "Resolution": "392x392",
+      "Display size": "1.2\"",
+      "Color depth": "16 bit, RGB565",
+      "Disp. technology": "IPS",
+      "DPI": "326 px/inch",
+      "Touch pad": "Capacitive",
+      "Avg. FPS": "45",
+      "Power supply": "USB micro (5V)",
+      "Others": "Arduino expansion, PMOD expansion, SD Card, USB, FXOS8700CQ accelerometer, USB, Audio codec with stereo line in and line out/headphone jack"
+    },
+    "video": "https://www.youtube.com/watch?v=I2uka3Uzbvo",
+    "links": [
+      ["Read more", "https://blog.lvgl.io/2021-06-19/nxp-imxrt595-evk-review"],
+      [
+        "Buy now",
+        "https://www.nxp.com/design/development-boards/i-mx-evaluation-and-development-boards/i-mx-rt595-evaluation-kit:MIMXRT595-EVK#buy"
+      ]
+    ]
+  },
+  {
+    "type": "review",
+    "published": true,
+    "date": "2021-05-12",
+    "logo": "nxp",
+    "vendor": "NXP Semiconductors",
+    "title": "LPCXpresso54S018 (OM13098UL)",
+    "description": "LPC54S018-EVK earned Standard LVGL board certification, which means the users can be sure that this board can be easily used with LVGL and they can expect decent performance and quality. Note that the LPC54018 based (LPCXpresso54018, part no. OM40003) comes with an LCD already attached. From the point of view of a graphics application, it behaves identically to LPC54S018 board (LPCXpresso54S018, part no LPC54S018-EVK) for which you need to get the LCD and attached separately.",
+    "certificate": "standard",
+    "features": {
+      "MCU": "LPC54S018JET180 (220 MHz)",
+      "RAM": "360 kB internal, 16 MB SDRAM",
+      "Flash": "16 MB Quad-SPI flash (no internal flash)",
+      "GPU": "None",
+      "Resolution": "480x272",
+      "Display size": "4.3\"",
+      "Color depth": "16 bit, RGB565",
+      "Disp. technology": "TN",
+      "DPI": "128 px/inch",
+      "Touch pad": "Capacitive",
+      "Avg. FPS": "19",
+      "Power supply": "USB micro (5V)",
+      "Others": "SD/MMC card slot, HS/FS, host/device, 10/100Mbps Ethernet, Arduio Uno, PMod extension, NXP MMA8652FCR1 Accelerometer Digital microphone, Stereo audio codec with line in/out"
+    },
+    "video": "https://www.youtube.com/watch?v=n0jzo_ItcDw",
+    "links": [
+      ["Read more", "https://blog.lvgl.io/2021-05-12/nxp-lpc54s018-review"],
+      [
+        "Buy now",
+        "https://www.nxp.com/products/processors-and-microcontrollers/arm-microcontrollers/general-purpose-mcus/lpc54000-cortex-m4-/lpcxpresso54628-development-board:OM13098"
+      ]
+    ]
+  },
+  {
+    "type": "review",
+    "published": true,
+    "date": "2021-05-12",
+    "logo": "nxp",
+    "vendor": "NXP Semiconductors",
+    "title": "i.MX RT1064 EVK",
+    "description": "The i.MX RT1064 EVK uses the i.MX RT1064 crossover MCU, running at 600 MHz featuring NXP’s advanced implementation of the Arm® Cortex®-M7 core. It's the first i.MX RT devices that includes on-chip flash (4 MB). Support for FreeRTOS™ available within the MCUXpresso SDK. The i.MX RT1064 EVK board is now supported by Arm® Mbed™ OS and Zephyr™ OS, both open-source embedded operating systems for developing the Internet of Things.",
+    "certificate": "standard",
+    "features": {
+      "MCU": "i.MX RT1064 (600 MHz)",
+      "RAM": "1 MB internal, 32 MB SDRAM",
+      "Flash": "4MB internal, 64 MB Hyper Flash, 8 MB QSPI Flash",
+      "GPU": "PXP",
+      "Resolution": "480x272",
+      "Display size": "4.3\"",
+      "Color depth": "16 bit, RGB565",
+      "Disp. technology": "TN",
+      "DPI": "128 px/inch",
+      "Touch pad": "Capacitive",
+      "Avg. FPS": "32",
+      "Power supply": "USB micro (5V)",
+      "Others": "SD card, Camera connector, S/PDIF connector, 6-Axis Motion Sensor, USB (PD-PHY and CC-Logic), Headphone jack, Speaker connection, Microphone"
+    },
+    "video": "https://www.youtube.com/embed/B6viS_7EUF0",
+    "links": [
+      ["Read more", "https://blog.lvgl.io/2021-05-12/nxp-imxrt1064-evk-review"],
+      [
+        "Buy now",
+        "https://www.nxp.com/design/development-boards/i-mx-evaluation-and-development-boards/i-mx-rt1064-evaluation-kit:MIMXRT1064-EVK#buy"
+      ]
+    ]
+  },
+  {
+    "type": "review",
+    "published": true,
+    "date": "2021-05-12",
+    "logo": "nxp",
+    "vendor": "NXP Semiconductors",
+    "title": "i.MX RT1060 EVK",
+    "description": "The i.MX RT1060 EVK uses the i.MX RT1060 crossover MCU, running at 600 MHz featuring NXP’s advanced implementation of the Arm® Cortex®-M7 core. The 1 MB on-chip RAM, GPU and many external memory make this board ideal for UI applications. Support for FreeRTOS™ available within the MCUXpresso SDK. The i.MX RT1060 EVK board is now supported by Arm® Mbed™ OS and Zephyr™ OS, both open-source embedded operating systems for developing the Internet of Things.",
+    "certificate": "standard",
+    "features": {
+      "MCU": "i.MX RT1060 (600 MHz)",
+      "RAM": "1 MB internal, 32 MB SDRAM",
+      "Flash": "64 MB Hyper Flash, 8 MB QSPI Flash",
+      "GPU": "PXP",
+      "Resolution": "480x272",
+      "Display size": "4.3\"",
+      "Color depth": "16 bit, RGB565",
+      "Disp. technology": "TN",
+      "DPI": "128 px/inch",
+      "Touch pad": "Capacitive",
+      "Avg. FPS": "32",
+      "Power supply": "USB micro (5V)",
+      "Others": "SD card, Camera connector, S/PDIF connector, 6-Axis Motion Sensor, USB(PD-PHY and CC-Logic), Headphone jack, Speaker connection, Microphone"
+    },
+    "video": "https://www.youtube.com/embed/9BurHHUcitA",
+    "links": [
+      ["Read more", "https://blog.lvgl.io/2021-05-12/nxp-imxrt1060-evk-review"],
+      [
+        "Buy now",
+        "https://www.nxp.com/design/development-boards/i-mx-evaluation-and-development-boards/i-mx-rt1060-evaluation-kit:MIMXRT1060-EVK#buy"
+      ]
+    ]
+  },
+  {
+    "type": "review",
+    "published": true,
+    "date": "2021-03-24",
+    "logo": "nxp",
+    "vendor": "NXP Semiconductors",
+    "title": "LPCXpresso54628 (OM13098UL)",
+    "description": "The board is comprised of target LPC54628 device with an onboard, CMSIS-DAP / SEGGER® J-Link compatible debug probe. MCUXpresso configuration tools and extensive SDK drivers/examples are available for the board at mcuxpresso.nxp.com. The LPCXpresso54628 board is an Arm® Mbed™-Enabled platform for developing the Internet of Things with a free, open-source embedded operating system. In addition to standard LPCXpresso V3 features, this board includes a complete set of peripheral interfaces to enable developers to fully explore the capabilities of LPC546xx devices.",
+    "certificate": "standard",
+    "features": {
+      "MCU": "LPC54628 (220 MHz)",
+      "RAM": "200 kB internal, 16 MB SDRAM",
+      "Flash": "512 kB internal, 16 MB Quad-SPI flash",
+      "GPU": "None",
+      "Resolution": "480x272",
+      "Display size": "4.3\"",
+      "Color depth": "16 bit, RGB565",
+      "Disp. technology": "TN",
+      "DPI": "128 px/inch",
+      "Touch pad": "Capacitive",
+      "Avg. FPS": "19",
+      "Power supply": "USB micro (5V)",
+      "Others": "SD/MMC card slot, USB HS/FS, host/device, 10/100Mbps Ethernet, Arduio Uno, PMod extension, NXP MMA8652FCR1 Accelerometer, Digital microphone, Stereo audio codec with line in/out"
+    },
+    "video": "https://www.youtube.com/watch?v=QFxHtnCsYpo",
+    "links": [
+      ["Read more", "https://blog.lvgl.io/2021-03-24/nxp-lpc54628-review"],
+      [
+        "Buy now",
+        "https://www.nxp.com/products/processors-and-microcontrollers/arm-microcontrollers/general-purpose-mcus/lpc54000-cortex-m4-/lpcxpresso54628-development-board:OM13098"
+      ]
+    ]
+  },
+  {
+    "type": "review",
+    "published": true,
+    "date": "2021-03-24",
+    "logo": "nxp",
+    "vendor": "NXP Semiconductors",
+    "title": "i.MX RT1050 EVK",
+    "description": "Powered by an i.MX RT1050 crossover MCU, featuring NXP’s advanced implementation of the Arm® Cortex®-M7 core. This core operates at speeds up to 600 MHz to provide high CPU performance and great real-time response. Support for FreeRTOS™ available within the MCUXpresso SDK and also supported by Arm® Mbed™ OS and Zephyr™ OS.",
+    "certificate": "standard",
+    "features": {
+      "MCU": "i.MX RT1050 (600 MHz)",
+      "RAM": "512 kB internal, 32 MB SDRAM",
+      "Flash": "64 MB + 8 MB",
+      "GPU": "PXP",
+      "Resolution": "480x272",
+      "Display size": "4.3\"",
+      "Color depth": "16 bit, RGB565",
+      "Disp. technology": "TN",
+      "DPI": "128 px/inch",
+      "Touch pad": "Resistive",
+      "Avg. FPS": ">33",
+      "Power supply": "5 V",
+      "Others": "SD card, Camera connector, S/PDIF connector, 6-Axis Motion Sensor, USB, Headphone jack, Speaker connection, Microphone"
+    },
+    "video": "https://www.youtube.com/watch?v=MVG5Grv3FbE",
+    "links": [
+      ["Read more", "https://blog.lvgl.io/2021-03-24/nxp-imxrt1050-evk-review"],
+      [
+        "Buy now",
+        "https://www.nxp.com/design/development-boards/i-mx-evaluation-and-development-boards/i-mx-rt1050-evaluation-kit:MIMXRT1050-EVK#buy"
+      ]
+    ]
+  },
+  {
+    "type": "review",
+    "published": true,
+    "date": "2021-03-23",
+    "logo": "yeacreate",
+    "vendor": "YeaCreate",
+    "title": "Nscreen32",
+    "description": "YeaCreate Nscreen32 is an ESP32 based display development board kit. It includes ESP32-WROVER-IE (16M Flash + 8M PSRAM), a 480x320 4 inch TFT display, and a GT911 capacitance touch screen. It's also the 1st LVGL official certified board in the world. Nscreen32 is a cost-effective solution for IoT applications and for embedded systems in general.",
+    "certificate": "standard",
+    "features": {
+      "MCU": "ESP32-WROVER-IE (2 x 240MHz)",
+      "RAM": "520 kB internal, 8 MB PSRAM",
+      "Flash": "16 MB",
+      "GPU": "None",
+      "Resolution": "480x320",
+      "Display size": "4\"",
+      "Color depth": "16 bit, RGB565",
+      "Disp. technology": "TN",
+      "DPI": "144 px/inch",
+      "Touch pad": "Capacitive",
+      "Avg. FPS": "20",
+      "Power supply": "5 V",
+      "Others": "WiFi (802.11 B/G/N), Bluetooth (4.2 BR/EDR/BLE), 2 Serial (RX0/TX0, RX1/TX1), GPIO (4 + 4 input only)"
+    },
+    "video": "https://www.youtube.com/watch?v=9lDxJRI9BwM",
+    "links": [
+      ["Read more", "https://blog.lvgl.io/2021-03-23/yeacreate-nscreen32-review"],
+      ["Buy now", "https://store.yeacreate.com/products/3"]
+    ]
+  }
+]

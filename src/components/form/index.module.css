@@ -1,0 +1,176 @@
+.input,
+.select,
+.textarea {
+  appearance: none;
+  border: 1px solid var(--border-color-secondary);
+  background-color: var(--bg-color-primary);
+  padding: 1rem;
+  font-family: var(--font);
+  font-size: 1rem;
+  line-height: 1rem;
+  border-radius: var(--radius-sm);
+  outline: none;
+  transition: all 0.4s var(--ease-out-expo);
+  width: 100%;
+  color: var(--color-primary);
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+  border-color: var(--border-color-base);
+  background-color: var(--bg-color-base);
+}
+
+.input::placeholder {
+  color: var(--color-quarternary);
+}
+
+.input.lg,
+.select.lg,
+.textarea.lg {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.input.md,
+.select.md,
+.textarea.md {
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+}
+
+.input.sm,
+.select.sm,
+.textarea.sm {
+  padding: 0.75rem;
+  font-size: 0.875rem;
+}
+
+.selectWrapper {
+  position: relative;
+}
+
+.selectIcon {
+  color: var(--color-tertiary);
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.textarea {
+  resize: vertical;
+}
+
+.checkboxWrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.checkboxIconWrapper {
+  margin-top: 0.25rem;
+  position: relative;
+  color: rgb(var(--color-white-rgb));
+}
+
+.checkboxIcon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: scale(0.5) rotate(45deg);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s var(--ease-out-expo);
+}
+
+.checkbox {
+  appearance: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color-primary);
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid var(--border-color-secondary);
+  border-radius: var(--radius-xs);
+  transition: all 0.4s var(--ease-out-expo);
+}
+
+.checkbox:checked {
+  background-color: var(--color-accent);
+}
+
+.checkbox:checked + .checkboxIcon {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+
+.customFileInput {
+  position: relative;
+  display: flex;
+  gap: var(--gap-4);
+  align-items: center;
+}
+
+.fileInput {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.fakeButton {
+}
+
+.customFileInput:hover .fakeButton {
+  background-color: var(--bg-color-secondary);
+}
+
+.fileName {
+  color: var(--color-tertiary);
+}
+
+.label {
+  font-weight: 500;
+  color: var(--color-secondary);
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.label.lg,
+.fileName.lg {
+  font-size: 1rem;
+}
+
+.label.md,
+.fileName.md {
+  font-size: 0.875rem;
+}
+
+.label.sm,
+.fileName.sm {
+  font-size: 0.875rem;
+}
+
+input[type="checkbox"] + .label {
+  font-weight: 400;
+}
+
+.error {
+  /* styles for the error message */
+}
+
+.note {
+  margin-top: var(--gap-1);
+  display: block;
+}
+
+.invalid {
+  border: 2px solid var(--color-accent);
+}

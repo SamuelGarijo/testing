@@ -1,0 +1,528 @@
+<html>
+  <head>
+    <meta
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,shrink-to-fit=no"
+      name="viewport" />
+    <style>
+      body,
+      html {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        min-width: 100%;
+        min-height: 100%;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .git-commit-info {
+        font-family: Consolas, "Courier New", Courier, monospace;
+        background-color: #f1f1f1;
+        padding: 2px;
+        text-align: left;
+      }
+      #git-hash {
+        text-align: center;
+      }
+      #output {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body style="overflow: hidden">
+    <div id="git-hash"></div>
+    <p id="output"><canvas id="canvas"></canvas></p>
+    <script>
+      var siteURL = new URL(window.location.href),
+        w = siteURL.searchParams.get("w") || "800",
+        h = siteURL.searchParams.get("h") || "480",
+        canvas = document.getElementById("canvas");
+      canvas.setAttribute("width", w),
+        canvas.setAttribute("height", h),
+        console.log("Requested " + w + "x" + h + " px");
+      var Module = {
+        print: function (t) {
+          console.log(t);
+        },
+        printErr: function (t) {
+          console.error(t);
+        },
+        canvas: canvas,
+        arguments: [
+          siteURL.searchParams.get("w") || "800",
+          siteURL.searchParams.get("h") || "480",
+          siteURL.searchParams.get("example") ?? "default",
+        ],
+      };
+      if (void 0 !== window.git_hash) {
+        for (
+          var gitHashDiv = document.querySelector("#git-hash"),
+            gitLink = document.createElement("div"),
+            gitHashComponents = window.git_hash.split(" ").filter((t) => t.trim().length > 0),
+            i = 0;
+          i < gitHashComponents.length;
+          i++
+        )
+          console.log(gitHashComponents[i], gitHashComponents[i].length),
+            40 == gitHashComponents[i].length
+              ? (gitHashComponents[i] = `<a href="https://github.com/lvgl/${gitHashComponents[i + 1]}/commit/${
+                  gitHashComponents[i]
+                }">${gitHashComponents[i]}</a>`)
+              : (gitHashComponents[i] += "<br/>");
+        gitLink.classList.add("git-commit-info"),
+          (gitLink.innerHTML = gitHashComponents.join(" ")),
+          (gitHashDiv.textContent = "LVGL compiled to Emscripten. Git commit information:"),
+          gitHashDiv.appendChild(gitLink);
+      }
+      window.addEventListener("click", () => window.focus());
+    </script>
+    <script>
+      var read_,
+        readAsync,
+        readBinary,
+        setWindowTitle,
+        Module = void 0 !== Module ? Module : {},
+        moduleOverrides = Object.assign({}, Module),
+        arguments_ = [],
+        thisProgram = "./this.program",
+        quit_ = (A, e) => {
+          throw e;
+        },
+        ENVIRONMENT_IS_WEB = "object" == typeof window,
+        ENVIRONMENT_IS_WORKER = "function" == typeof importScripts,
+        ENVIRONMENT_IS_NODE =
+          "object" == typeof process && "object" == typeof process.versions && "string" == typeof process.versions.node,
+        scriptDirectory = "";
+      function locateFile(A) {
+        return Module.locateFile ? Module.locateFile(A, scriptDirectory) : scriptDirectory + A;
+      }
+      if (ENVIRONMENT_IS_NODE) {
+        var fs = require("fs"),
+          nodePath = require("path");
+        (scriptDirectory = ENVIRONMENT_IS_WORKER ? nodePath.dirname(scriptDirectory) + "/" : __dirname + "/"),
+          (read_ = (A, e) => {
+            var I = tryParseAsDataURI(A);
+            return I
+              ? e
+                ? I
+                : I.toString()
+              : ((A = isFileURI(A) ? new URL(A) : nodePath.normalize(A)), fs.readFileSync(A, e ? void 0 : "utf8"));
+          }),
+          (readBinary = (A) => {
+            var e = read_(A, !0);
+            return e.buffer || (e = new Uint8Array(e)), e;
+          }),
+          (readAsync = (A, e, I, g = !0) => {
+            var n = tryParseAsDataURI(A);
+            n && e(n),
+              (A = isFileURI(A) ? new URL(A) : nodePath.normalize(A)),
+              fs.readFile(A, g ? void 0 : "utf8", (A, n) => {
+                A ? I(A) : e(g ? n.buffer : n);
+              });
+          }),
+          !Module.thisProgram && process.argv.length > 1 && (thisProgram = process.argv[1].replace(/\\/g, "/")),
+          (arguments_ = process.argv.slice(2)),
+          "undefined" != typeof module && (module.exports = Module),
+          process.on("uncaughtException", (A) => {
+            if (!("unwind" === A || A instanceof ExitStatus || A.context instanceof ExitStatus)) throw A;
+          });
+        var nodeMajor = process.versions.node.split(".")[0];
+        nodeMajor < 15 &&
+          process.on("unhandledRejection", (A) => {
+            throw A;
+          }),
+          (quit_ = (A, e) => {
+            throw ((process.exitCode = A), e);
+          }),
+          (Module.inspect = () => "[Emscripten Module object]");
+      } else
+        (ENVIRONMENT_IS_WEB || ENVIRONMENT_IS_WORKER) &&
+          (ENVIRONMENT_IS_WORKER
+            ? (scriptDirectory = self.location.href)
+            : "undefined" != typeof document &&
+              document.currentScript &&
+              (scriptDirectory = document.currentScript.src),
+          (scriptDirectory =
+            0 !== scriptDirectory.indexOf("blob:")
+              ? scriptDirectory.substr(0, scriptDirectory.replace(/[?#].*/, "").lastIndexOf("/") + 1)
+              : ""),
+          (read_ = (A) => {
+            try {
+              var e = new XMLHttpRequest();
+              return e.open("GET", A, !1), e.send(null), e.responseText;
+            } catch (e) {
+              var I = tryParseAsDataURI(A);
+              if (I) return intArrayToString(I);
+              throw e;
+            }
+          }),
+          ENVIRONMENT_IS_WORKER &&
+            (readBinary = (A) => {
+              try {
+                var e = new XMLHttpRequest();
+                return e.open("GET", A, !1), (e.responseType = "arraybuffer"), e.send(null), new Uint8Array(e.response);
+              } catch (e) {
+                var I = tryParseAsDataURI(A);
+                if (I) return I;
+                throw e;
+              }
+            }),
+          (readAsync = (A, e, I) => {
+            var g = new XMLHttpRequest();
+            g.open("GET", A, !0),
+              (g.responseType = "arraybuffer"),
+              (g.onload = () => {
+                if (200 == g.status || (0 == g.status && g.response)) e(g.response);
+                else {
+                  var n = tryParseAsDataURI(A);
+                  n ? e(n.buffer) : I();
+                }
+              }),
+              (g.onerror = I),
+              g.send(null);
+          }),
+          (setWindowTitle = (A) => (document.title = A)));
+      var wasmBinary,
+        out = Module.print || console.log.bind(console),
+        err = Module.printErr || console.error.bind(console);
+      Object.assign(Module, moduleOverrides),
+        (moduleOverrides = null),
+        Module.arguments && (arguments_ = Module.arguments),
+        Module.thisProgram && (thisProgram = Module.thisProgram),
+        Module.quit && (quit_ = Module.quit),
+        Module.wasmBinary && (wasmBinary = Module.wasmBinary);
+      var wasmMemory,
+        noExitRuntime = Module.noExitRuntime || !0;
+      "object" != typeof WebAssembly && abort("no native wasm support detected");
+      var EXITSTATUS,
+        HEAP8,
+        HEAPU8,
+        HEAP16,
+        HEAPU16,
+        HEAP32,
+        HEAPU32,
+        HEAPF32,
+        HEAPF64,
+        wasmTable,
+        ABORT = !1;
+      function updateMemoryViews() {
+        var A = wasmMemory.buffer;
+        (Module.HEAP8 = HEAP8 = new Int8Array(A)),
+          (Module.HEAP16 = HEAP16 = new Int16Array(A)),
+          (Module.HEAP32 = HEAP32 = new Int32Array(A)),
+          (Module.HEAPU8 = HEAPU8 = new Uint8Array(A)),
+          (Module.HEAPU16 = HEAPU16 = new Uint16Array(A)),
+          (Module.HEAPU32 = HEAPU32 = new Uint32Array(A)),
+          (Module.HEAPF32 = HEAPF32 = new Float32Array(A)),
+          (Module.HEAPF64 = HEAPF64 = new Float64Array(A));
+      }
+      var __ATPRERUN__ = [],
+        __ATINIT__ = [],
+        __ATPOSTRUN__ = [],
+        runtimeInitialized = !1,
+        runtimeKeepaliveCounter = 0;
+      function preRun() {
+        if (Module.preRun)
+          for ("function" == typeof Module.preRun && (Module.preRun = [Module.preRun]); Module.preRun.length; )
+            addOnPreRun(Module.preRun.shift());
+        callRuntimeCallbacks(__ATPRERUN__);
+      }
+      function initRuntime() {
+        (runtimeInitialized = !0), callRuntimeCallbacks(__ATINIT__);
+      }
+      function postRun() {
+        if (Module.postRun)
+          for ("function" == typeof Module.postRun && (Module.postRun = [Module.postRun]); Module.postRun.length; )
+            addOnPostRun(Module.postRun.shift());
+        callRuntimeCallbacks(__ATPOSTRUN__);
+      }
+      function addOnPreRun(A) {
+        __ATPRERUN__.unshift(A);
+      }
+      function addOnInit(A) {
+        __ATINIT__.unshift(A);
+      }
+      function addOnPostRun(A) {
+        __ATPOSTRUN__.unshift(A);
+      }
+      var runDependencies = 0,
+        runDependencyWatcher = null,
+        dependenciesFulfilled = null;
+      function addRunDependency(A) {
+        runDependencies++, Module.monitorRunDependencies && Module.monitorRunDependencies(runDependencies);
+      }
+      function removeRunDependency(A) {
+        if (
+          (runDependencies--,
+          Module.monitorRunDependencies && Module.monitorRunDependencies(runDependencies),
+          0 == runDependencies &&
+            (null !== runDependencyWatcher && (clearInterval(runDependencyWatcher), (runDependencyWatcher = null)),
+            dependenciesFulfilled))
+        ) {
+          var e = dependenciesFulfilled;
+          (dependenciesFulfilled = null), e();
+        }
+      }
+      function abort(A) {
+        throw (
+          (Module.onAbort && Module.onAbort(A),
+          err((A = "Aborted(" + A + ")")),
+          (ABORT = !0),
+          (EXITSTATUS = 1),
+          (A += ". Build with -sASSERTIONS for more info."),
+          new WebAssembly.RuntimeError(A))
+        );
+      }
+      var wasmBinaryFile,
+        tempDouble,
+        tempI64,
+        dataURIPrefix = "data:application/octet-stream;base64,";
+      function isDataURI(A) {
+        return A.startsWith(dataURIPrefix);
+      }
+      function isFileURI(A) {
+        return A.startsWith("file://");
+      }
+      function getBinary(A) {
+        try {
+          if (A == wasmBinaryFile && wasmBinary) return new Uint8Array(wasmBinary);
+          var e = tryParseAsDataURI(A);
+          if (e) return e;
+          if (readBinary) return readBinary(A);
+          throw "both async and sync fetching of the wasm failed";
+        } catch (A) {
+          abort(A);
+        }
+      }
+      function getBinaryPromise(A) {
+        if (!wasmBinary && (ENVIRONMENT_IS_WEB || ENVIRONMENT_IS_WORKER)) {
+          if ("function" == typeof fetch && !isFileURI(A))
+            return fetch(A, { credentials: "same-origin" })
+              .then((e) => {
+                if (!e.ok) throw "failed to load wasm binary file at '" + A + "'";
+                return e.arrayBuffer();
+              })
+              .catch(() => getBinary(A));
+          if (readAsync)
+            return new Promise((e, I) => {
+              readAsync(A, (A) => e(new Uint8Array(A)), I);
+            });
+        }
+        return Promise.resolve().then(() => getBinary(A));
+      }
+      function instantiateArrayBuffer(A, e, I) {
+        return getBinaryPromise(A)
+          .then((A) => WebAssembly.instantiate(A, e))
+          .then((A) => A)
+          .then(I, (A) => {
+            err("failed to asynchronously prepare wasm: " + A), abort(A);
+          });
+      }
+      function instantiateAsync(A, e, I, g) {
+        return A ||
+          "function" != typeof WebAssembly.instantiateStreaming ||
+          isDataURI(e) ||
+          isFileURI(e) ||
+          ENVIRONMENT_IS_NODE ||
+          "function" != typeof fetch
+          ? instantiateArrayBuffer(e, I, g)
+          : fetch(e, { credentials: "same-origin" }).then((A) =>
+              WebAssembly.instantiateStreaming(A, I).then(g, function (A) {
+                return (
+                  err("wasm streaming compile failed: " + A),
+                  err("falling back to ArrayBuffer instantiation"),
+                  instantiateArrayBuffer(e, I, g)
+                );
+              })
+            );
+      }
+      function createWasm() {
+        var A = { env: wasmImports, wasi_snapshot_preview1: wasmImports };
+        function e(A, e) {
+          var I = A.exports;
+          return (
+            (Module.asm = I),
+            (wasmMemory = Module.asm.memory),
+            updateMemoryViews(),
+            (wasmTable = Module.asm.__indirect_function_table),
+            addOnInit(Module.asm.__wasm_call_ctors),
+            removeRunDependency("wasm-instantiate"),
+            I
+          );
+        }
+        if ((addRunDependency("wasm-instantiate"), Module.instantiateWasm))
+          try {
+            return Module.instantiateWasm(A, e);
+          } catch (A) {
+            return err("Module.instantiateWasm callback failed with error: " + A), !1;
+          }
+        return (
+          instantiateAsync(wasmBinary, wasmBinaryFile, A, function (A) {
+            e(A.instance);
+          }),
+          {}
+        );
+      }
+      function ExitStatus(A) {
+        (this.name = "ExitStatus"), (this.message = "Program terminated with exit(" + A + ")"), (this.status = A);
+      }
+      function listenOnce(A, e, I) {
+        A.addEventListener(e, I, { once: !0 });
+      }
+      function callRuntimeCallbacks(A) {
+        for (; A.length > 0; ) A.shift()(Module);
+      }
+      function dynCallLegacy(A, e, I) {
+        var g = Module["dynCall_" + A];
+        return I && I.length ? g.apply(null, [e].concat(I)) : g.call(null, e);
+      }
+      isDataURI(
+        (wasmBinaryFile =
+          "data:application/octet-stream;base64,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")
+      ) || (wasmBinaryFile = locateFile(wasmBinaryFile));
+      var wasmTableMirror = [];
+      function getWasmTableEntry(A) {
+        var e = wasmTableMirror[A];
+        return (
+          e ||
+            (A >= wasmTableMirror.length && (wasmTableMirror.length = A + 1),
+            (wasmTableMirror[A] = e = wasmTable.get(A))),
+          e
+        );
+      }
+      function intArrayToString(A) {
+        for (var e = [], I = 0; I < A.length; I++) {
+          var g = A[I];
+          g > 255 && (g &= 255), e.push(String.fromCharCode(g));
+        }
+        return e.join("");
+      }
+      function getHeapMax() {
+        return 2147483648;
+      }
+      function emscripten_realloc_buffer(A) {
+        var e = wasmMemory.buffer;
+        try {
+          return wasmMemory.grow((A - e.byteLength + 65535) >>> 16), updateMemoryViews(), 1;
+        } catch (A) {}
+      }
+      function _emscripten_resize_heap(A) {
+        var e = HEAPU8.length;
+        A >>>= 0;
+        var I = getHeapMax();
+        if (A > I) return !1;
+        for (var g, n, t = 1; t <= 4; t *= 2) {
+          var r = e * (1 + 0.2 / t);
+          if (
+            ((r = Math.min(r, A + 100663296)),
+            emscripten_realloc_buffer(Math.min(I, (g = Math.max(A, r)) + (((n = 65536) - (g % n)) % n))))
+          )
+            return !0;
+        }
+        return !1;
+      }
+      var decodeBase64 =
+        "function" == typeof atob
+          ? atob
+          : function (A) {
+              var e,
+                I,
+                g,
+                n,
+                t,
+                r,
+                i = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",
+                a = "",
+                o = 0;
+              A = A.replace(/[^A-Za-z0-9\+\/\=]/g, "");
+              do {
+                (e = (i.indexOf(A.charAt(o++)) << 2) | ((n = i.indexOf(A.charAt(o++))) >> 4)),
+                  (I = ((15 & n) << 4) | ((t = i.indexOf(A.charAt(o++))) >> 2)),
+                  (g = ((3 & t) << 6) | (r = i.indexOf(A.charAt(o++)))),
+                  (a += String.fromCharCode(e)),
+                  64 !== t && (a += String.fromCharCode(I)),
+                  64 !== r && (a += String.fromCharCode(g));
+              } while (o < A.length);
+              return a;
+            };
+      function intArrayFromBase64(A) {
+        if ("boolean" == typeof ENVIRONMENT_IS_NODE && ENVIRONMENT_IS_NODE) {
+          var e = Buffer.from(A, "base64");
+          return new Uint8Array(e.buffer, e.byteOffset, e.byteLength);
+        }
+        try {
+          for (var I = decodeBase64(A), g = new Uint8Array(I.length), n = 0; n < I.length; ++n) g[n] = I.charCodeAt(n);
+          return g;
+        } catch (A) {
+          throw new Error("Converting base64 string to bytes failed.");
+        }
+      }
+      function tryParseAsDataURI(A) {
+        if (isDataURI(A)) return intArrayFromBase64(A.slice(dataURIPrefix.length));
+      }
+      var calledRun,
+        wasmImports = { emscripten_resize_heap: _emscripten_resize_heap },
+        asm = createWasm(),
+        ___wasm_call_ctors = function () {
+          return (___wasm_call_ctors = Module.asm.__wasm_call_ctors).apply(null, arguments);
+        },
+        _lv_obj_get_parent = (Module._lv_obj_get_parent = function () {
+          return (_lv_obj_get_parent = Module._lv_obj_get_parent = Module.asm.lv_obj_get_parent).apply(null, arguments);
+        }),
+        _lv_obj_get_width = (Module._lv_obj_get_width = function () {
+          return (_lv_obj_get_width = Module._lv_obj_get_width = Module.asm.lv_obj_get_width).apply(null, arguments);
+        }),
+        _lv_obj_get_child = (Module._lv_obj_get_child = function () {
+          return (_lv_obj_get_child = Module._lv_obj_get_child = Module.asm.lv_obj_get_child).apply(null, arguments);
+        }),
+        _malloc = function () {
+          return (_malloc = Module.asm.malloc).apply(null, arguments);
+        },
+        ___errno_location = function () {
+          return (___errno_location = Module.asm.__errno_location).apply(null, arguments);
+        },
+        stackSave = function () {
+          return (stackSave = Module.asm.stackSave).apply(null, arguments);
+        },
+        stackRestore = function () {
+          return (stackRestore = Module.asm.stackRestore).apply(null, arguments);
+        },
+        stackAlloc = function () {
+          return (stackAlloc = Module.asm.stackAlloc).apply(null, arguments);
+        };
+      function run() {
+        function A() {
+          calledRun ||
+            ((calledRun = !0),
+            (Module.calledRun = !0),
+            ABORT || (initRuntime(), Module.onRuntimeInitialized && Module.onRuntimeInitialized(), postRun()));
+        }
+        runDependencies > 0 ||
+          (preRun(),
+          runDependencies > 0 ||
+            (Module.setStatus
+              ? (Module.setStatus("Running..."),
+                setTimeout(function () {
+                  setTimeout(function () {
+                    Module.setStatus("");
+                  }, 1),
+                    A();
+                }, 1))
+              : A()));
+      }
+      if (
+        ((dependenciesFulfilled = function A() {
+          calledRun || run(), calledRun || (dependenciesFulfilled = A);
+        }),
+        Module.preInit)
+      )
+        for ("function" == typeof Module.preInit && (Module.preInit = [Module.preInit]); Module.preInit.length > 0; )
+          Module.preInit.pop()();
+      run();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+.toast {
+  position: fixed;
+  bottom: var(--gap-6);
+  left: 50%;
+  transform: translateX(-50%) translateY(150%);
+  pointer-events: none;
+  opacity: 0;
+  background-color: var(--bg-color-secondary);
+  color: var(--color-primary);
+  padding: var(--block-pads-x);
+  border-radius: ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 30rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg), 0 0 0 1px inset var(--border-color-tertiary);
+  z-index: var(--z-index-sticky);
+  transition: transform 0.3s var(--ease-out-expo), opacity 0.3s var(--ease-out-expo);
+}
+
+.isVisible {
+  pointer-events: auto;
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.close {
+  position: absolute;
+  right: var(--gap-2);
+  top: var(--gap-2);
+  display: flex;
+  background-color: var(--bg-color-tertiary);
+  color: var(--color-primary);
+  padding: var(--gap-1);
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: background-color 0.3s var(--ease-out-expo), color 0.3s var(--ease-out-expo),
+    transform 0.3s var(--ease-out-expo);
+}
+
+.close:hover {
+  background-color: var(--bg-color-quarternary);
+  color: rgb(var(--color-white-rgb));
+  transform: scale(1.1);
+}

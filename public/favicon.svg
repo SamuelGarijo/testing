@@ -1,0 +1,25 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    :root {
+      --main-color: #343839;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main-color: #fff;
+      }
+    }
+    .main {
+      fill: var(--main-color);
+    }
+  </style>
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M6.00001 3C4.34316 3 3.00001 4.34314 3.00001 5.99999L3 10C3 10.5523 3.44771 11 4 11H10C11.1046 11 12 11.8954 12 13V19C12 19.5523 12.4477 20 13 20H19C20.1046 20 21 20.8954 21 22V28C21 28.5523 21.4477 29 22 29H26C27.6569 29 29 27.6569 29 26V6C29 4.34315 27.6569 3 26 3H6.00001ZM25.5 8C26.3284 8 27 7.32843 27 6.5C27 5.67157 26.3284 5 25.5 5C24.6716 5 24 5.67157 24 6.5C24 7.32843 24.6716 8 25.5 8Z"
+    class="main" />
+  <rect x="3.00012" y="12" width="8" height="8" rx="1" fill="#F35F20" />
+  <path
+    d="M3 22C3 21.4477 3.44772 21 4 21H10C10.5523 21 11 21.4477 11 22V28C11 28.5523 10.5523 29 10 29H6C4.34315 29 3 27.6569 3 26V22Z"
+    fill="#62D367" />
+  <rect x="12" y="21" width="8" height="8" rx="1" fill="#3C65F8" />
+</svg>

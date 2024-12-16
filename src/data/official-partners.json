@@ -1,0 +1,62 @@
+[
+  {
+    "logoSrc": "/images/logos/actions.svg",
+    "logoAlt": "Actions Logo",
+    "logoHref": "https://www.actionstech.com/",
+    "description": "Actions Technology partners with LVGL to bring high-performance graphics to their low-power AIoT chip solutions, driving smart audio and wearable devices. Through our collaboration, we’re optimizing GUIs to create smooth, engaging user experiences for leading global brands."
+  },
+  {
+    "logoSrc": "/images/logos/alifsemi.svg",
+    "logoAlt": "Alif Semiconductor Logo",
+    "logoHref": "https://www.alifsemi.com/",
+    "description": "Alif Semiconductor combines low-power, high-performance processing with LVGL’s graphics library to power intelligent, energy-efficient devices. LVGL’s optimized solutions make it easy to build responsive GUIs on Alif’s scalable hardware platforms, perfect for AIoT and embedded applications."
+  },
+  {
+    "logoSrc": "/images/logos/arm.svg",
+    "logoAlt": "arm Logo",
+    "logoHref": "https://www.arm.com/",
+    "description": "Arm technology is deeply integrated into LVGL, ensuring optimal performance and efficiency for 2D graphics on the latest Cortex-M cores using Arm2D and Helium technology."
+  },
+  {
+    "logoSrc": "/images/logos/espressif.svg",
+    "logoAlt": "Espressif Logo",
+    "logoHref": "https://www.espressif.com/",
+    "description": "Espressif package manager seamlessly integrates LVGL, making it a breeze to get started. Unleash your creativity with our wide range of display drivers. Discover the perfect synergy between Espressif and LVGL today and revolutionize your IoT development."
+  },
+  {
+    "logoSrc": "/images/logos/nxp.svg",
+    "logoAlt": "NXP Logo",
+    "logoHref": "https://www.nxp.com/",
+    "description": "NXP tightly integrates LVGL into their ecosystem. In MCUXpresso you can add LVGL into your project by one click or choose from many examples to get started. LVGL and NXP are working together to add first-class support for VG-Lite and PXP accelerators on i.MX RT devices."
+  },
+  {
+    "logoSrc": "/images/logos/renesas.svg",
+    "logoAlt": "Renesas Logo",
+    "logoHref": "https://www.renesas.com/",
+    "description": "Renesas pairs its advanced microcontrollers with LVGL, featuring built-in Dave2D GPU support for efficient rendering. LVGL provides ready-to-use projects for Renesas boards making it easy to get started with these amazing devices."
+  },
+  {
+    "logoSrc": "/images/logos/st.svg",
+    "logoAlt": "ST Microelectronics Logo",
+    "logoHref": "https://www.st.com/",
+    "description": "Enhance UI performance with ST’s powerful graphics capabilities coupled with LVGL’s lightweight framework, offering flexible solutions for a wide range of applications."
+  },
+  {
+    "logoSrc": "/images/logos/think-silicon.svg",
+    "logoAlt": "Think Silicon Logo",
+    "logoHref": "https://www.think-silicon.com/",
+    "description": "Think Silicon’s ultra-low power NEMA GPUs are designed to work seamlessly with LVGL, providing a powerful and efficient solution for embedded graphics."
+  },
+  {
+    "logoSrc": "/images/logos/verisilicon.svg",
+    "logoAlt": "VeriSilicon Logo",
+    "logoHref": "https://www.verisilicon.com/",
+    "description": "VeriSilicon leads the way in integrating advanced 2.5D and 3D GPU technology with LVGL’s open-source graphics library, enabling high-performance and power-efficient UIs for wearables and embedded devices. Together, we are pushing the boundaries of embedded graphics!"
+  },
+  {
+    "logoSrc": "/images/logos/xiaomi.svg",
+    "logoAlt": "Xiaomi Logo",
+    "logoHref": "https://www.mi.com/",
+    "description": "We‘ve been using LVGL for our embedded graphics needs, and it has been used in a huge number of devices. We are very happy with its performance and its lightweight nature.  We also highly appreciate the collaboration with LVGL‘s open source community."
+  }
+]

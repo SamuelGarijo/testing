@@ -1,0 +1,44 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.iframe {
+  position: absolute;
+  left: 0;
+  background-color: transparent;
+  border: 0;
+  opacity: 0;
+  transform-origin: 0 0;
+  transition: opacity 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.iframe.loaded {
+  opacity: 1;
+}
+
+.spinner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 2rem;
+  padding: 0.25rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: rgba(var(--color-white-rgb), 0.8);
+  --m: conic-gradient(#0000 10%, #000), linear-gradient(#000 0 0) content-box;
+  -webkit-mask: var(--m);
+  mask: var(--m);
+  -webkit-mask-composite: source-out;
+  mask-composite: subtract;
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  to {
+    transform: translate(-50%, -50%) rotate(1turn);
+  }
+}
