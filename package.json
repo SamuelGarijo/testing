@@ -2,11 +2,15 @@
   "name": "lvgl.io",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "vercel-build": "yum install -y cairo cairo-devel libpng-devel libjpeg-turbo-devel giflib-devel && npm run build"
   },
   "dependencies": {
     "@next/third-parties": "^14.2.4",
