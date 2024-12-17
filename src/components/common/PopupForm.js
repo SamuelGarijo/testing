@@ -35,19 +35,25 @@ const PopupForm = () => {
         <button className={styles.closeButton} onClick={handleClose}>
           ×
         </button>
-        <h2 className={styles.title}>Subscribe for Updates</h2>
-        <p className={styles.description}>Join our mailing list to receive the latest news and offers.</p>
+        <h2 className={styles.title}>Get Exclusive Updates 🚀</h2>
+        <p className={styles.description}>
+          Go behind the scenes of LVGL development.
+          Stay updated on the latest releases, features,
+          and the vision driving LVGL forward.
+        </p>
         <form method="POST" action="#" className={styles.form}>
-          <input
-            type="email"
-            name="EMAIL"
-            placeholder="Enter your email"
-            required
-            className={styles.input}
-          />
-          <button type="submit" className={styles.button}>
-            Subscribe
-          </button>
+          <div className={styles.inputWrapper}>
+            <input
+              type="email"
+              name="EMAIL"
+              placeholder="Your email here"
+              required
+              className={styles.input}
+            />
+            <button type="submit" className={styles.button}>
+              Join the Insiders List
+            </button>
+          </div>
         </form>
       </div>
     </div>
@@ -55,5 +61,3 @@ const PopupForm = () => {
 };
 
 export default PopupForm;
-
-
