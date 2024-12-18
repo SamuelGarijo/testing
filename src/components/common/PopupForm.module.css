@@ -36,6 +36,16 @@
   flex-direction: column;
   gap: 12px;
   height: 100%;
+  transition: all 0.3s ease;
+}
+
+.successState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+  height: 100%;
+  padding-top: 40px; 
 }
 
 .closeButton {
@@ -69,6 +79,15 @@
   line-height: 1.1;
   color: #000;
   max-width: 312px;
+  transition: all 0.3s ease;
+}
+
+.successState .title {
+  font-size: 64px;
+  letter-spacing: -0.06em;
+  line-height: 0.9em;
+  max-width: 100%;
+  text-align: center;
 }
 
 .description {
@@ -76,6 +95,7 @@
   line-height: 1.1;
   color: #333;
   margin: 0;
+  transition: opacity 0.3s ease;
 }
 
 .form {
@@ -84,18 +104,7 @@
   position: relative;
   border-radius: 999px;
   padding: 0px;
-}
-
-.form::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border: 1px solid black;
-  border-radius: 999px;
-  pointer-events: none;
+  width: 100%;
 }
 
 .inputWrapper {
@@ -103,8 +112,9 @@
   align-items: stretch;
   background: #FFFFFF;
   border-radius: 999px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: none;
   height: 48px;
+  transition: all 0.3s ease;
 }
 
 .input {
@@ -129,24 +139,48 @@
   color: white;
   border: none;
   border-radius: 999px;
-  padding: 0 24px;
+  padding: 0 16px;
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: all 0.3s ease;
   white-space: nowrap;
   font-family: 'Inter', sans-serif;
   height: 100%;
   margin: 0;
 }
 
-.button:hover {
-  background: #333;
+.successButton {
+  flex: 1;
+  width: 100%;
+  background: #FFFFFF;
+  color: #000000;
+  border: 1px solid #000000;
+  padding: inherit;
+  box-shadow: none;
+  outline: none;
+  max-width: 352px;
+  max-height: 48px;
+  cursor: default;
+}
+
+.successButton:hover {
+  background: #FFFFFF;
+}
+
+.successContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
 }
 
 .message {
   font-size: 14px;
   text-align: center;
+  transition: opacity 0.3s ease;
 }
 
 .success {
@@ -178,3 +212,4 @@
     transform: translateY(20px);
   }
 }
+
