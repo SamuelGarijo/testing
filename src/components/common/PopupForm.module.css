@@ -68,6 +68,7 @@
   margin: 0;
   line-height: 1.1;
   color: #000;
+  max-width: 312px;
 }
 
 .description {
