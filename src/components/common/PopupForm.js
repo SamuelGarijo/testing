@@ -31,26 +31,30 @@ const PopupForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const formData = new FormData(e.target);
-
-    const url = `https://samuelgarijo.us14.list-manage.com/subscribe/post-json?u=b4d3abd543fcf0c7f3147ae90&id=745ade7fd6&c=callback`;
-
-    fetch(url, {
-      method: 'POST',
-      body: new URLSearchParams(formData),
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
-      },
-    })
-      .then((response) => response.text())
-      .then((data) => {
-        console.log('Response:', data);
-        alert('Successfully subscribed!');
-      })
-      .catch((error) => {
-        console.error('Error:', error);
-        alert('There was an error. Please try again.');
-      });
+  
+    const formData = new URLSearchParams(new FormData(e.target)).toString();
+    const url = `https://samuelgarijo.us14.list-manage.com/subscribe/post-json?u=b4d3abd543fcf0c7f3147ae90&id=745ade7fd6&c=callback&${formData}`;
+  
+    // Crear un script dinámico para usar JSONP
+    const script = document.createElement("script");
+    script.src = url;
+  
+    // Definir la función callback que Mailchimp llamará
+    window.callback = (data) => {
+      if (data.result === "success") {
+        alert("Successfully subscribed!");
+      } else {
+        alert("Error: " + data.msg);
+      }
+      document.body.removeChild(script);
+    };
+  
+    script.onerror = () => {
+      alert("Network error. Please try again.");
+      document.body.removeChild(script);
+    };
+  
+    document.body.appendChild(script);
   };
 
   return (
