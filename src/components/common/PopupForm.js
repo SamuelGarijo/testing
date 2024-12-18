@@ -29,6 +29,30 @@ const PopupForm = () => {
 
   if (!showPopup) return null;
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+
+    const url = `https://samuelgarijo.us14.list-manage.com/subscribe/post-json?u=b4d3abd543fcf0c7f3147ae90&id=745ade7fd6&c=callback`;
+
+    fetch(url, {
+      method: 'POST',
+      body: new URLSearchParams(formData),
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+    })
+      .then((response) => response.text())
+      .then((data) => {
+        console.log('Response:', data);
+        alert('Successfully subscribed!');
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+        alert('There was an error. Please try again.');
+      });
+  };
+
   return (
     <div className={styles.popupOverlay}>
       <div className={styles.popupContainer}>
@@ -41,7 +65,7 @@ const PopupForm = () => {
           Stay updated on the latest releases, features,
           and the vision driving LVGL forward.
         </p>
-        <form method="POST" action="#" className={styles.form}>
+        <form method="POST" action="#" className={styles.form} onSubmit={handleSubmit}>
           <div className={styles.inputWrapper}>
             <input
               type="email"
